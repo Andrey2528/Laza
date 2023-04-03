@@ -1,0 +1,87 @@
+.teacher {
+    .container {
+        margin-top: 150px;
+    }
+
+    .elips{
+        width: 908px;
+        height: 908px;
+
+        position: absolute;
+        bottom: -34px;
+        right: -183px;
+
+        background: rgba(217, 217, 217, 0.3);
+        /* effect */
+
+        filter: blur(250px);
+    }
+
+    // .teacher__card
+
+    &__card {
+        background: rgba(55, 55, 55, 0.6);
+        border: 5px solid rgba(220, 63, 49, 0.7);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 56px;
+
+        width: 1436px;
+        height: 946px;
+        align-items: center;
+        display: flex;
+        padding-left: 35px;
+
+        position: relative;
+        z-index: 100;
+
+        overflow: hidden;
+    }
+
+    &__img{
+        position: absolute;
+        z-index: 10;
+        bottom: -3px;
+        right: 0;
+    }
+
+    .card{
+        &__text{
+            max-width: 950px;
+        }
+    }
+    
+    .main {
+
+        // .main__title
+
+        &__title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 98px;
+            line-height: 96%;
+            /* or 94px */
+
+            display: flex;
+            align-items: center;
+            font-feature-settings: 'kern' off;
+
+            color: #FFFFFF;
+        }
+
+        // .main__subtitle
+
+        &__subtitle {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 46px;
+            line-height: 144%;
+
+            margin-top: 20px;
+        }
+
+        // .main__text-red
+
+        &__text-red {
+        }
+    }
+}

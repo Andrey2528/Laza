@@ -1,0 +1,132 @@
+.buy {
+    z-index: 100;
+    background-color: $bgColor;
+    .container {
+        margin-top: -30px;
+        position: relative;
+    }
+
+    .imgBG1{
+        position: absolute;
+        bottom: -616px;
+        left: -153px;
+        opacity: 0.1;
+        -webkit-transform: rotate(-1.37deg);
+        transform: rotate(2.63deg);
+    }
+
+    .imgBG2{
+        position: absolute;
+        bottom: -420px;
+        right: -157px;
+        opacity: 0.1;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    .imgBG3{
+        position: absolute;
+        bottom: -310px;
+left: -163px;
+        opacity: 0.5;
+        -webkit-transform: rotate(-1.37deg);
+        transform: rotate(2.63deg);
+    }
+
+    .imgBG4{
+        position: absolute;
+        bottom: -249px;
+        right: -166px;
+        opacity: 0.5;
+        -webkit-transform: rotate(-1.37deg);
+        transform: rotate(2.63deg);
+    }
+
+    // .buy__text
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    // .buy__card
+
+    &__card {
+        margin-top: 87px;
+    }
+
+    
+    .main {
+
+        // .main__subtitle
+
+        &__subtitle {
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 150%;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: capitalize;
+        }
+
+        // .main__desc
+
+        &__desc {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+        }
+    }
+    .card {
+
+        // .card__list
+
+        &__list {
+            &-top{
+                justify-content: space-between;
+                display: flex;
+                flex-direction: row;
+                margin-top: 87px;
+            }
+            &-bottom{
+                justify-content: center;
+                display: flex;
+                flex-direction: row;
+                margin-top: 80px;
+
+                
+            }
+        }
+
+        // .card__item
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            align-items: center;
+        }
+
+        // .card__img
+
+        &__img {
+        }
+
+        // .card__text
+
+        &__text {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+    .item{
+        &-top{
+            margin-top: -50px;
+        }
+       
+        &__margin-right{
+                margin-right: 140px;
+        }
+    }
+}

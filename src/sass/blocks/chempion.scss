@@ -1,0 +1,81 @@
+.chempion {
+    .container {
+        margin-top: 287px;
+
+        position: relative;
+    }
+
+    .imgBG1{
+        position: absolute;
+        bottom: -349px;
+        left: -163px;
+        opacity: 0.1;
+    }
+
+    .imgBG2{
+        position: absolute;
+        top: 236px;
+        right: -185px;
+        opacity: 0.1;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        //justify-content: space-between;
+        margin-top: 120px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            border-bottom: 4px solid $red;
+        }
+    }
+
+    .last{
+        &__item{
+            margin-left: 10px;
+            margin-right: 100px;
+        }
+    }
+ 
+    .main {
+
+        &__title{
+            font-family: $fontMontserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 73px;
+            letter-spacing: 0.1em;
+            font-variant: small-caps;
+        }
+
+        &__subtitle {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 96px;
+            line-height: 220%;
+
+            text-align: center;
+            font-variant: small-caps;
+            text-transform: capitalize;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__desc {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 56px;
+            line-height: 220%;
+  
+            font-variant: small-caps;
+        }
+    }
+}

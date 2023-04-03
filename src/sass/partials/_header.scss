@@ -1,0 +1,113 @@
+.header {
+    .container {
+        display: flex;
+         
+        flex-direction: row;
+        width: 100%;
+
+        position: relative;
+
+        
+    }
+
+    .imgBG1{
+        position: absolute;
+        bottom: -1032px;
+left: -183px;
+        z-index: -10000;
+
+        opacity: 0.8;
+        transform: rotate(-1.37deg);
+    }
+
+    .imgBG2{
+        position: absolute;
+        bottom: -1204px;
+        right: -155px;
+        z-index: -10000;
+        opacity: 0.5;
+        transform: rotate(0deg);  
+    }
+
+    .elips{
+        width: 900px;
+        height: 900px;
+
+        background: rgba(217, 217, 217, 0.16);
+        /* effect */
+
+        filter: blur(250px);
+
+        position: absolute;
+        right: -142px;
+bottom: -953px;
+z-index: -100;
+    }
+
+
+
+    .nav {
+
+        &__row {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0 0 0;
+            width: 100%;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 1590px;
+        }
+
+        &__item {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+        }
+
+        &__text-column {
+            display: flex;
+            flex-direction: column;
+            margin: 15px 0 0 15px;
+        }
+
+        &__logo {
+            display: block;
+            img{
+                width: 302px;
+            }
+        }
+    }
+    .main {
+
+        &__title {
+            font-family: $fontOranienbaum;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 116px;
+            color: #FFFFFF;
+        }
+
+        &__subtitle {
+            font-family: $fontMontserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: 43px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+        }
+
+        &__desc{
+            ont-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}

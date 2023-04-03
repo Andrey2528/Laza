@@ -1,0 +1,53 @@
+.banner {
+    .container {
+        margin-top: 85px;
+
+    }
+
+    &__rect{
+
+        margin-top: 235px;
+        
+    }
+
+
+    &__column {
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+    .column {
+
+        // .column__half
+
+        &__half-1 {
+            width: 60%;
+            min-width: 980px;
+        }
+        &__half-2 {
+           //width: 48%;
+           position: relative;
+        }
+
+        &__img{
+            position: absolute;
+            left: -167px;
+            bottom: -470px;  
+            z-index: -100;   
+        }
+    }
+
+    .main {
+		&__title {
+            font-size: 146px;
+            line-height: 80.5%;
+            
+
+            margin-bottom: 55px;
+		}
+
+        &__btn{
+        }
+    }
+}

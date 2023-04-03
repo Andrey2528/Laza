@@ -1,0 +1,127 @@
+.because {
+
+    .container {
+    }
+
+    &__elips{
+        width: 36px;
+        height: 36px;
+        background-color: $red;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 40px;
+    }
+
+    &__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 100px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    // .because__list
+
+    &__list {
+       display: flex;
+       justify-content: space-between;
+       
+       flex-direction: row;
+
+       margin-bottom: 81px;
+        :last-child{
+            margin: 0;
+        }
+
+        width: 100%;
+
+        align-items: center;
+        
+    }
+
+    // .because__item
+
+    &__item {
+        
+        ::after{
+           
+        }
+    }
+
+    .item{
+        &__row{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &__column{
+            display: flex;
+            flex-direction: column;
+
+            p{
+                max-width: 700px;
+                margin-top: 0;
+                text-align: left;
+                font-style: normal;
+
+                font-family: $fontMontserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 150%;
+                border-bottom: 4px solid $red;
+            }
+        }
+
+        &__text{
+
+            
+        }
+
+       /* &__underline{
+            margin-top: 8px;
+            width: 100%;
+            height: 4px;
+            background-color: $red;
+            border-radius: 50px;
+        }*/
+    }
+
+    
+    .main {
+
+        // .main__subtitle
+
+        &__subtitle {
+            
+            margin-top: 106px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 66px;
+            line-height: 80px;
+        }
+
+        &__desc{
+            margin-top: 30px;
+            max-width: 1520px;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        // .main__text-red
+
+        &__text-red {
+        }
+    }
+
+}

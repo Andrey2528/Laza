@@ -1,0 +1,21 @@
+.main{
+    &__btn{
+        max-width: 527px;
+        max-height: 100px;
+        background-color: $red;
+        color: $white;
+
+        padding: 30px 72px;
+
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 24px;
+
+        cursor: pointer;
+
+        font-family: $fontMontserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 43px;
+    }
+}
