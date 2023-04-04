@@ -1,0 +1,135 @@
+.registr {
+    .container {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        position: relative;
+    }
+
+    .imgBG1{
+        position: absolute;
+        top: -107px;
+        left: -176px;
+        z-index: -10;
+    }
+
+    .imgBG2{
+        position: absolute;
+        z-index: -10;
+        top: 282px;
+        right: -164px;
+    }
+    .imgBG3{
+        position: absolute;
+        z-index: 10;
+        top: 54px;
+        left: -68px;
+    }
+
+    .imgBG4{
+        position: absolute;
+        z-index: 10;
+        top: -80px;
+        right: 1px;
+    }
+
+    &__text-block {
+    }
+
+    
+
+    
+    .main {
+
+        &__title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 128px;
+            line-height: 80.5%;
+            /* identical to box height, or 103px */
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-feature-settings: 'kern' off;
+
+            margin-bottom: 35px;
+            margin-top: 30px;
+        }
+
+        &__desc {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 59px;
+            /* identical to box height */
+            
+            letter-spacing: 0.015em;
+            font-variant: small-caps;
+        }
+
+        &__sutitle {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 78px;
+            /* identical to box height */
+
+            letter-spacing: 0.03em;
+            font-variant: small-caps;
+            margin: 10px 0px;
+        }
+
+        &__text-red {
+        }
+
+        &__btn {
+            //max-width: 632px;
+            //max-height: 144px;
+            margin-top: 150px;
+            margin-bottom: 210px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 12px;
+            /* identical to box height, or 19% */
+
+            letter-spacing: 0.02em;
+            padding: 60px 77px;
+        }
+    }
+    &__btn1{
+        margin-top: 30px;
+
+        
+
+    }
+    &__btn2 {
+        //max-width: 857px;
+        //max-height: 144px;
+        margin-top: 30px;
+
+        background-color: $red;
+        color: $white;
+
+        padding: 60px 77px;
+
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 24px;
+
+        cursor: pointer;
+
+        font-family: $fontMontserrat;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 12px;
+        /* identical to box height, or 19% */
+
+        letter-spacing: 0.02em;
+    }
+}

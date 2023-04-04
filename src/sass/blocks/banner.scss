@@ -1,13 +1,10 @@
 .banner {
     .container {
         margin-top: 85px;
-
     }
 
     &__rect{
-
         margin-top: 235px;
-        
     }
 
 
@@ -18,15 +15,16 @@
 
     
     .column {
-
-        // .column__half
-
         &__half-1 {
             width: 60%;
-            min-width: 980px;
+            //min-width: 980px;
+
+            @media (width: $Desc) {
+                width: 55%;
+            }
         }
+
         &__half-2 {
-           //width: 48%;
            position: relative;
         }
 
@@ -42,12 +40,13 @@
 		&__title {
             font-size: 146px;
             line-height: 80.5%;
-            
-
             margin-bottom: 55px;
-		}
+            @media (width: $Desc) {
+                width: 1192px;
 
-        &__btn{
-        }
+
+                font-size: 100px;
+            }
+		}
     }
 }

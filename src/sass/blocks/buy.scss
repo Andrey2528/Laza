@@ -5,7 +5,7 @@
         margin-top: -30px;
         position: relative;
     }
-
+    
     .imgBG1{
         position: absolute;
         bottom: -616px;
@@ -13,6 +13,11 @@
         opacity: 0.1;
         -webkit-transform: rotate(-1.37deg);
         transform: rotate(2.63deg);
+
+        @media (width: $Desc) {
+            bottom: -636px;
+            left: -121px;
+        }
     }
 
     .imgBG2{
@@ -22,11 +27,14 @@
         opacity: 0.1;
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
+        @media (width: $Desc) {
+
+        }
     }
     .imgBG3{
         position: absolute;
         bottom: -310px;
-left: -163px;
+        left: -163px;
         opacity: 0.5;
         -webkit-transform: rotate(-1.37deg);
         transform: rotate(2.63deg);
@@ -68,6 +76,10 @@ left: -163px;
             text-align: center;
             letter-spacing: 0.1em;
             text-transform: capitalize;
+
+            @media (width: $Desc) {
+                font-size: 48px;
+            }
         }
 
         // .main__desc

@@ -12,12 +12,9 @@
         right: -183px;
 
         background: rgba(217, 217, 217, 0.3);
-        /* effect */
 
         filter: blur(250px);
     }
-
-    // .teacher__card
 
     &__card {
         background: rgba(55, 55, 55, 0.6);
@@ -47,19 +44,18 @@
     .card{
         &__text{
             max-width: 950px;
+            position: absolute;
+            top: 50%;
+            margin: -300px 0 0 0;
         }
     }
     
     .main {
-
-        // .main__title
-
         &__title {
             font-style: normal;
             font-weight: 400;
             font-size: 98px;
             line-height: 96%;
-            /* or 94px */
 
             display: flex;
             align-items: center;
@@ -77,11 +73,6 @@
             line-height: 144%;
 
             margin-top: 20px;
-        }
-
-        // .main__text-red
-
-        &__text-red {
         }
     }
 }

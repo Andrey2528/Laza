@@ -27,8 +27,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    height: 106px;
+    width: 106px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -40,6 +40,7 @@
     border: none;
     outline: none;
     background: transparent;
+    z-index: 1000;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -79,7 +80,7 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: -100px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -88,16 +89,16 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: url('../img/arrowLeft.svg');
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: url('../img/arrowRight.svg');
 }
 
 .slick-next
 {
-    right: -25px;
+    right: -100px;
 }
 [dir='rtl'] .slick-next
 {
@@ -106,11 +107,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: url('../img/arrowRight.svg');
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: url('../img/arrowLeft.svg');
 }
 
 /* Dots */
@@ -178,7 +179,7 @@
 .slick-dots li button:before
 {
     font-family: 'slick';
-    font-size: 6px;
+    font-size: 16px;
     line-height: 20px;
 
     position: absolute;
@@ -192,7 +193,7 @@
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: #fff;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +201,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: #DC3F31;
 }

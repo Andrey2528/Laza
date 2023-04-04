@@ -1,0 +1,36 @@
+.rewiew {
+
+.container {
+    margin-top: 250px;
+}
+
+    &__img{
+        max-width: 470px;
+        max-height: 830px;
+        margin: 35px 100px;
+    }
+.main {
+
+		// .main__subtitle
+
+		&__subtitle {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 73px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            text-transform: capitalize;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+		}
+}
+
+}
+.slider {
+}
+.multiple-items {
+}
