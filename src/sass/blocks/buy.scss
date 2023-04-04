@@ -28,7 +28,8 @@
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
         @media (width: $Desc) {
-
+            bottom: -553px;
+            right: -157px;
         }
     }
     .imgBG3{
@@ -38,6 +39,9 @@
         opacity: 0.5;
         -webkit-transform: rotate(-1.37deg);
         transform: rotate(2.63deg);
+        @media (width: $Desc) {
+
+        }
     }
 
     .imgBG4{
@@ -47,6 +51,9 @@
         opacity: 0.5;
         -webkit-transform: rotate(-1.37deg);
         transform: rotate(2.63deg);
+        @media (width: $Desc) {
+
+        }
     }
 
     // .buy__text
