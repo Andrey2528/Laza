@@ -1,19 +1,19 @@
 .rewiew {
-
-.container {
-    margin-top: 250px;
-}
+    .container {
+        margin-top: 250px;
+        @media (max-width: $Desc) {
+            margin-top: 117px;
+        }
+    }
 
     &__img{
-        max-width: 470px;
-        max-height: 830px;
+        width: 470px;
+        height: 830px;
         margin: 35px 100px;
     }
-.main {
+    .main {
 
-		// .main__subtitle
-
-		&__subtitle {
+        &__subtitle {
             font-style: normal;
             font-weight: 600;
             font-size: 60px;
@@ -26,11 +26,8 @@
             align-items: center;
             justify-content: center;
             
-		}
-}
+        }
+    }
 
 }
-.slider {
-}
-.multiple-items {
-}
+

@@ -3,17 +3,16 @@
         $('.multiple-items').slick({
             dots: true,
             infinite: true,
-            speed: 500,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
                 {
-                    breakpoint: 1500,
+                    breakpoint: 1441,
                     settings: {
-                        arrows: true,
-                        centerMode: true,
-                        centerPadding: '450px',
-                        slidesToShow: 1
+                        dots: true,
+                        infinite: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
                 },
                 {
@@ -49,17 +48,16 @@
         $('.slider2').slick({
             dots: true,
             infinite: true,
-            speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
             responsive: [
                 {
-                    breakpoint: 1500,
+                    breakpoint: 1441,
                     settings: {
-                        arrows: true,
-                        centerMode: true,
-                        centerPadding: '450px',
-                        slidesToShow: 1
+                        dots: true,
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
                     }
                 },
                 {

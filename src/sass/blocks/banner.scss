@@ -19,7 +19,7 @@
             width: 60%;
             //min-width: 980px;
 
-            @media (width: $Desc) {
+            @media (max-width: $Desc) {
                 width: 55%;
             }
         }
@@ -41,7 +41,7 @@
             font-size: 146px;
             line-height: 80.5%;
             margin-bottom: 55px;
-            @media (width: $Desc) {
+            @media (max-width: $Desc) {
                 width: 1192px;
 
 

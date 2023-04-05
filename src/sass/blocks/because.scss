@@ -12,6 +12,11 @@
         align-items: center;
         justify-content: center;
         margin-right: 40px;
+
+        @media (max-width: $Desc) {
+            width: 32px;
+            height: 32px;
+        }
     }
 
     &__row{
@@ -22,9 +27,6 @@
         width: 100%;
         flex-wrap: wrap;
     }
-
-    // .because__list
-
     &__list {
        display: flex;
        justify-content: space-between;
@@ -35,20 +37,10 @@
         :last-child{
             margin: 0;
         }
-
         width: 100%;
 
         align-items: center;
         
-    }
-
-    // .because__item
-
-    &__item {
-        
-        ::after{
-           
-        }
     }
 
     .item{
@@ -74,28 +66,17 @@
                 font-size: 40px;
                 line-height: 150%;
                 border-bottom: 4px solid $red;
+
+                @media (max-width: $Desc) {
+                    font-size: 34px;
+                    line-height: 150%;
+                }
             }
         }
-
-        &__text{
-
-            
-        }
-
-       /* &__underline{
-            margin-top: 8px;
-            width: 100%;
-            height: 4px;
-            background-color: $red;
-            border-radius: 50px;
-        }*/
     }
 
     
     .main {
-
-        // .main__subtitle
-
         &__subtitle {
             
             margin-top: 106px;
@@ -104,6 +85,11 @@
             font-weight: 800;
             font-size: 66px;
             line-height: 80px;
+
+            @media (max-width: $Desc) {
+                font-size: 60px;
+                line-height: 73px;
+            }
         }
 
         &__desc{
@@ -116,11 +102,10 @@
             line-height: 59px;
             text-align: center;
             font-variant: small-caps;
-        }
-
-        // .main__text-red
-
-        &__text-red {
+            @media (max-width: $Desc) {
+                font-size: 42px;
+                line-height: 51px;
+            }
         }
     }
 

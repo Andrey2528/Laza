@@ -3,6 +3,10 @@
         margin-top: 287px;
 
         position: relative;
+
+        @media (max-width: $Desc) {
+            margin-top: 117px;
+        }
     }
 
     .imgBG1{
@@ -22,7 +26,6 @@
     &__list {
         display: flex;
         flex-direction: row;
-        //justify-content: space-between;
         margin-top: 120px;
     }
 
@@ -52,6 +55,16 @@
             line-height: 73px;
             letter-spacing: 0.1em;
             font-variant: small-caps;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            @media (max-width: $Desc) {
+                font-size: 54px;
+                line-height: 66px;
+            }
         }
 
         &__subtitle {
@@ -67,6 +80,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            
+            @media (max-width: $Desc) {
+                font-size: 88px;
+                line-height: 220%;
+            }
         }
 
         &__desc {
@@ -76,6 +94,21 @@
             line-height: 220%;
   
             font-variant: small-caps;
+
+            text-align: center;
+
+            @media (max-width: $Desc) {
+                font-size: 50px;
+                line-height: 220%;
+            }
+        }
+    }
+
+    .minheinght{
+        @media (max-width: $Desc) {
+            font-size: 50px;
+            line-height: 100%;
+            margin-top: 16px;
         }
     }
 }

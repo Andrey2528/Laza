@@ -14,7 +14,7 @@
         -webkit-transform: rotate(-1.37deg);
         transform: rotate(2.63deg);
 
-        @media (width: $Desc) {
+        @media (max-width: $Desc) {
             bottom: -636px;
             left: -121px;
         }
@@ -27,7 +27,7 @@
         opacity: 0.1;
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
-        @media (width: $Desc) {
+        @media (max-width: $Desc) {
             bottom: -553px;
             right: -157px;
         }
@@ -39,9 +39,6 @@
         opacity: 0.5;
         -webkit-transform: rotate(-1.37deg);
         transform: rotate(2.63deg);
-        @media (width: $Desc) {
-
-        }
     }
 
     .imgBG4{
@@ -51,9 +48,6 @@
         opacity: 0.5;
         -webkit-transform: rotate(-1.37deg);
         transform: rotate(2.63deg);
-        @media (width: $Desc) {
-
-        }
     }
 
     // .buy__text
@@ -84,7 +78,7 @@
             letter-spacing: 0.1em;
             text-transform: capitalize;
 
-            @media (width: $Desc) {
+            @media (max-width: $Desc) {
                 font-size: 48px;
             }
         }

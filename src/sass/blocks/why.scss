@@ -1,5 +1,4 @@
 .why {
-    
     .container {
         margin-top: 115px;
         position: relative;
@@ -17,9 +16,8 @@
         top: -68px;
         right: -314px;
         opacity: 0.1;
+        z-index: -10;
     }
-
-    // .why__list
 
     &__list {
         margin-top: 140px;
@@ -38,8 +36,6 @@
         }
     }
 
-    // .why__item
-
     &__item {
         display: flex;
         flex-direction: row;
@@ -57,15 +53,11 @@
         border-radius: 56px;
     }
 
-    // .why__img
-
     &__img {
         margin-right: 32px;
     }
 
     .main {
-
-        // .main__title
 
         &__subtitle {
             font-family: $fontMontserrat;
@@ -79,21 +71,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @media (max-width: $Desc) {
+                font-size: 54px;
+                line-height: 66px;
+            }
         }
-
-        // .main__text-red
-
-        &__text-red {
-        }
-
-        // .main__desc
 
         &__desc {
             font-style: normal;
             font-weight: 400;
             font-size: 33px;
             line-height: 40px;
-            /* or 121% */
 
             display: flex;
             align-items: flex-end;

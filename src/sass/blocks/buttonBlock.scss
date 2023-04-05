@@ -8,27 +8,28 @@
         margin: 95px auto 95px auto;
     }
 
-    // .buttonBlock__img
-
     &__img {
         &-right{
 
         }
         &-left{
            transform: rotate(-180deg); 
+
         }
     }
 
     
     .main {
-
-        // .main__btn
-
         &__btn {
-            max-width: 507px;
-            max-height: 124px;
+            width: 507px;
+            height: 124px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
 
-            padding: 40px 140px;
+            //padding: 40px 140px;
+
         }
     }
 }

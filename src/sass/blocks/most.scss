@@ -1,5 +1,4 @@
 .most {
-    
     .container {
         margin-top: 221px;
         display: flex;
@@ -22,8 +21,6 @@
         opacity: 0.5;
     }
 
-    // .most__list
-
     &__list {
         display: flex;
         flex-direction: column;
@@ -31,9 +28,11 @@
         :last-child{
             margin: 0;
         }
-    }
 
-    // .most__item
+        @media (max-width: $Desc) {
+            margin-top: 35px;
+        }
+    }
 
     &__item {
         display: flex;
@@ -43,21 +42,11 @@
         max-width: 1336px;
     }
 
-    // .most__img
-
     &__img {
         margin-bottom: 40px;
     }
 
-    // .most__text
-
-    &__text {
-    }
-
     .main {
-
-        // .main__subtitle
-
         &__subtitle {
             font-style: normal;
             font-weight: 600;
@@ -66,27 +55,25 @@
             letter-spacing: 0.1em;
             text-transform: capitalize;
 
-           
+            @media (max-width: $Desc) {
+                font-size: 54px;
+                line-height: 66px;
+            }
         }
-
-        // .main__desc
 
         &__desc {
             font-style: normal;
             font-weight: 500;
             font-size: 40px;
             line-height: 116%;
-            /* or 46px */
 
             text-align: center;
             font-variant: small-caps;
 
             align-items: center;
-        }
 
-        // .main__text-red
-
-        &__text-red {
+            font-size: 34px;
+            line-height: 116%;
         }
     }
 }

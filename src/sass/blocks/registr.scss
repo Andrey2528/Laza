@@ -28,6 +28,14 @@
         z-index: 10;
         top: 54px;
         left: -68px;
+        
+
+        img{
+            @media (max-width: $Desc) {
+                width: 305px;
+                height: 722px;
+            }
+        }
     }
 
     .imgBG4{
@@ -35,14 +43,22 @@
         z-index: 10;
         top: -80px;
         right: 1px;
+        @media (max-width: $Desc) {
+            top: -44px;
+            right: -77px;
+        }
+        
+        img{
+            @media (max-width: $Desc) {
+                width: 305px;
+                height: 821px;
+            }
+        }
     }
 
     &__text-block {
     }
 
-    
-
-    
     .main {
 
         &__title {
@@ -50,7 +66,6 @@
             font-weight: 400;
             font-size: 128px;
             line-height: 80.5%;
-            /* identical to box height, or 103px */
 
             display: flex;
             align-items: center;
@@ -66,8 +81,7 @@
             font-weight: 600;
             font-size: 48px;
             line-height: 59px;
-            /* identical to box height */
-            
+
             letter-spacing: 0.015em;
             font-variant: small-caps;
         }
@@ -77,26 +91,19 @@
             font-weight: 600;
             font-size: 64px;
             line-height: 78px;
-            /* identical to box height */
 
             letter-spacing: 0.03em;
             font-variant: small-caps;
             margin: 10px 0px;
         }
 
-        &__text-red {
-        }
-
         &__btn {
-            //max-width: 632px;
-            //max-height: 144px;
             margin-top: 150px;
             margin-bottom: 210px;
             font-style: normal;
             font-weight: 700;
             font-size: 64px;
             line-height: 12px;
-            /* identical to box height, or 19% */
 
             letter-spacing: 0.02em;
             padding: 60px 77px;
@@ -104,13 +111,9 @@
     }
     &__btn1{
         margin-top: 30px;
-
-        
-
     }
     &__btn2 {
-        //max-width: 857px;
-        //max-height: 144px;
+
         margin-top: 30px;
 
         background-color: $red;
@@ -128,8 +131,12 @@
         font-weight: 700;
         font-size: 64px;
         line-height: 12px;
-        /* identical to box height, or 19% */
 
         letter-spacing: 0.02em;
+
+        &:hover{
+            background-color: $darkRed;
+            animation: scale 1s forwards;
+        }
     }
 }

@@ -1,9 +1,8 @@
 .less {
     .container {
         margin-top: 215px;
+        position: relative;
     }
-
-    // .less__list
 
     &__list {
         display: flex;
@@ -15,56 +14,66 @@
         flex-direction: row;
         justify-content: center;
 
+        @media (max-width: $Desc) {
+            justify-content: space-between;
+        }
+
         .less__item{
             margin-right: 155px;
             :last-child{
                 margin: 0;
             }
+            @media (max-width: $Desc) {
+                margin: 0;
+            }
         }
     }
-
-    // .less__item
 
     &__item {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
-
-    // .less__list-bottom
-
     
+    .item{
+        &__abs{
+            @media (max-width: $Desc) {
+                position: absolute;
+                top: -111px;
+                right: 415px;
+            }
+        }
+    }
 
     .main {
-
-        // .main__title
-
         &__title {
             font-style: normal;
             font-weight: 400;
             font-size: 132.166px;
             line-height: 153px;
-            /* identical to box height */
 
             text-align: center;
             letter-spacing: 0.05em;
 
             margin-right: 40px;
+
+            @media (max-width: $Desc) {
+                font-size: 100px;
+                line-height: 116px;
+            }
         }
-
-        // .main__text-red
-
-        &__text-red {
-        }
-
-        // .main__subtitle
 
         &__subtitle {
             font-style: normal;
             font-weight: 700;
             font-size: 40px;
             line-height: 150%;
-            border-bottom: 4px solid $red;;
+            border-bottom: 4px solid $red;
+
+            @media (max-width: $Desc) {
+                font-size: 34px;
+                line-height: 150%;
+            }
         }
     }
 }
