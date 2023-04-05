@@ -4,6 +4,9 @@
         @media (max-width: $Desc) {
             margin-top: 117px;
         }
+        @media (max-width: $Tablet) {
+            margin-top: 40px;
+        }
     }
 
     &__img{
@@ -25,9 +28,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            
+
+            @media (max-width: $Tablet) {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 150%; 
+                margin-top: 90px;
+            }
         }
     }
-
 }
-

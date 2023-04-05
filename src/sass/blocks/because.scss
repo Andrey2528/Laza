@@ -17,6 +17,12 @@
             width: 32px;
             height: 32px;
         }
+
+        @media (max-width: $Tablet) {
+            width: 28px;
+            height: 28px;
+            margin-right: 8px;
+        }
     }
 
     &__row{
@@ -71,6 +77,12 @@
                     font-size: 34px;
                     line-height: 150%;
                 }
+
+                @media (max-width: $Tablet) {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 150%;
+                }
             }
         }
     }
@@ -90,6 +102,12 @@
                 font-size: 60px;
                 line-height: 73px;
             }
+
+            @media (max-width: $Tablet) {
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 150%;
+            }
         }
 
         &__desc{
@@ -105,6 +123,11 @@
             @media (max-width: $Desc) {
                 font-size: 42px;
                 line-height: 51px;
+            }
+            @media (max-width: $Tablet) {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 130%;
             }
         }
     }

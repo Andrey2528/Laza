@@ -24,8 +24,11 @@ body{
     margin-right: auto;
     max-width: 1590px;
 
-    @media (width: $Desc) {
+    @media (max-width: $Desc) {
         max-width: 1192px;
+    }
+    @media (max-width: $Tablet) {
+        max-width: 634px;
     }
 }
 

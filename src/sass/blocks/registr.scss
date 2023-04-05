@@ -8,6 +8,10 @@
         text-align: center;
 
         position: relative;
+
+        @media (max-width: $Tablet) {
+            margin-top: 70px;
+        }
     }
 
     .imgBG1{
@@ -15,6 +19,12 @@
         top: -107px;
         left: -176px;
         z-index: -10;
+        @media (max-width: $Tablet) {
+            top: -555px;
+            left: -518px;
+            z-index: -10;
+            transform: rotate(-15deg);
+        }
     }
 
     .imgBG2{
@@ -22,18 +32,29 @@
         z-index: -10;
         top: 282px;
         right: -164px;
+
+        
+        @media (max-width: $Tablet) {
+            top: -219px;
+            right: -1069px;
+            transform: rotate(270deg);
+        }
     }
     .imgBG3{
         position: absolute;
         z-index: 10;
-        top: 54px;
-        left: -68px;
+        top: 46px;
+        left: -59px;
         
 
         img{
             @media (max-width: $Desc) {
                 width: 305px;
                 height: 722px;
+            }
+            @media (max-width: $Tablet) {
+                width: 215px;
+                height: 415px;
             }
         }
     }
@@ -52,6 +73,11 @@
             @media (max-width: $Desc) {
                 width: 305px;
                 height: 821px;
+            }
+            @media (max-width: $Tablet) {
+                width: 215px;
+                height: 511px;
+                right: -59px;
             }
         }
     }
@@ -74,6 +100,11 @@
 
             margin-bottom: 35px;
             margin-top: 30px;
+            @media (max-width: $Tablet) {
+                font-weight: 400;
+                font-size: 60px;
+                line-height: 80.5%;
+            }
         }
 
         &__desc {
@@ -84,6 +115,12 @@
 
             letter-spacing: 0.015em;
             font-variant: small-caps;
+            @media (max-width: $Tablet) {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 130%;
+            }
         }
 
         &__sutitle {
@@ -95,6 +132,11 @@
             letter-spacing: 0.03em;
             font-variant: small-caps;
             margin: 10px 0px;
+            @media (max-width: $Tablet) {
+                font-weight: 700;
+                font-size: 34px;
+                line-height: 150%;
+            }
         }
 
         &__btn {
@@ -111,6 +153,12 @@
     }
     &__btn1{
         margin-top: 30px;
+        img{
+            @media (max-width: $Tablet) {
+                width: 323px;
+                height: 145px;
+            }
+        }
     }
     &__btn2 {
 
@@ -137,6 +185,13 @@
         &:hover{
             background-color: $darkRed;
             animation: scale 1s forwards;
+        }
+
+        @media (max-width: $Tablet) {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 12px;
+            padding: 30px 28px;
         }
     }
 }

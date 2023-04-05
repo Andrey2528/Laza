@@ -1,10 +1,25 @@
 .banner {
     .container {
         margin-top: 85px;
+        @media (max-width: $Tablet) {
+            margin-top: 65px;
+        }
     }
 
     &__rect{
         margin-top: 235px;
+        @media (max-width: $Tablet) {
+            margin-top: 60px;
+        }
+
+        img{
+            @media (max-width: $Desc) {
+                width: 1440px;
+            }
+            @media (max-width: $Tablet) {
+                width: $Tablet;
+            }
+        }
     }
 
 
@@ -17,8 +32,6 @@
     .column {
         &__half-1 {
             width: 60%;
-            //min-width: 980px;
-
             @media (max-width: $Desc) {
                 width: 55%;
             }
@@ -29,10 +42,22 @@
         }
 
         &__img{
+            background-image: url("/src/img/photoKsenia1.png");
             position: absolute;
             left: -167px;
             bottom: -470px;  
-            z-index: -100;   
+            z-index: -100;  
+
+            height: 1194px;
+            width: 957px;
+
+            @media (max-width: $Tablet) {
+                background-image: url("/src/img/photoKsenia768.png");
+                height: 475px;
+                width: 380px;
+                left: 30px;
+                bottom: -128px;
+            }
         }
     }
 
@@ -41,11 +66,17 @@
             font-size: 146px;
             line-height: 80.5%;
             margin-bottom: 55px;
+            width: 980px;
             @media (max-width: $Desc) {
-                width: 1192px;
-
-
+                max-width: 1192px;
                 font-size: 100px;
+            }
+
+            @media (max-width: $Tablet) {
+                width: 410px;
+                font-size: 60px;
+                padding: 0;
+                margin-bottom: 40px;
             }
 		}
     }

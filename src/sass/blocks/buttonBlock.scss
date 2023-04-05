@@ -6,15 +6,28 @@
         align-items: center;
         justify-content: space-around;
         margin: 95px auto 95px auto;
+        z-index: 1000;
+        position: relative;
     }
+
+    
 
     &__img {
         &-right{
-
+            img{
+                @media (max-width: $Tablet) {
+                    width: 200px;
+                }
+            }
+            
         }
         &-left{
-           transform: rotate(-180deg); 
-
+            transform: rotate(-180deg); 
+            img{
+                @media (max-width: $Tablet) {
+                    width: 200px;
+                }
+            }
         }
     }
 
@@ -30,6 +43,10 @@
 
             //padding: 40px 140px;
 
+            @media (max-width: $Tablet) {
+                width: 277px;
+                height: 72px;
+            }
         }
     }
 }

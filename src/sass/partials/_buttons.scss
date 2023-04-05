@@ -22,5 +22,16 @@
             background-color: $darkRed;
             animation: scale 1s forwards;
         }
+
+        @media (max-width: $Tablet) {
+            width: 398px;
+            height: 72px;
+
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 12px;
+            padding: 0;
+            white-space: nowrap;
+        }
     }
 }

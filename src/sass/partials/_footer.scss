@@ -16,6 +16,9 @@
         display: flex;
         align-items: center;
         margin-right: 70px;
+        @media (max-width: $Tablet) {
+            margin-right: 10px;
+        }
     }
 
     .main{
@@ -24,11 +27,12 @@
             font-weight: 400;
             font-size: 36px;
             line-height: 12px;
-            /* identical to box height, or 33% */
 
             text-align: center;
             letter-spacing: 0.02em;
+            @media (max-width: $Tablet) {
+                line-height: 36px;
+            }
         }
     }
-
 }
