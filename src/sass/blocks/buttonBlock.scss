@@ -8,9 +8,11 @@
         margin: 95px auto 95px auto;
         z-index: 1000;
         position: relative;
-    }
 
-    
+        @media (max-width: $Mobile) {
+            margin: 49px auto 49px auto;
+        }
+    }
 
     &__img {
         &-right{
@@ -19,7 +21,6 @@
                     width: 200px;
                 }
             }
-            
         }
         &-left{
             transform: rotate(-180deg); 
@@ -30,7 +31,6 @@
             }
         }
     }
-
     
     .main {
         &__btn {
@@ -46,6 +46,11 @@
             @media (max-width: $Tablet) {
                 width: 277px;
                 height: 72px;
+            }
+            @media (max-width: $Mobile) {
+                //max-width: 92px;
+                //max-height: 12px;
+                padding: 9px 8px;
             }
         }
     }

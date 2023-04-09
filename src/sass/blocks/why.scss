@@ -12,14 +12,19 @@
         bottom: -370px;
         left: -160px;
         opacity: 0.1;
+        @media (max-width: $Mobile) {
+            display: none;
+        }
     }
-
     .imgBG2{
         position: absolute;
         top: -68px;
         right: -314px;
         opacity: 0.1;
         z-index: -10;
+        @media (max-width: $Mobile) {
+            display: none;
+        }
     }
 
     &__list {
@@ -27,7 +32,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
         max-height: 260px;
 
         &-bottom{
@@ -41,7 +45,6 @@
                 display: none;
             }
         }
-
         @media (max-width: $Tablet) {
             display: none;
         }
@@ -76,7 +79,6 @@
             line-height: 73px;
             letter-spacing: 0.1em;
             text-transform: capitalize;
-
             display: flex;
             align-items: center;
             justify-content: center;
@@ -90,6 +92,11 @@
                 font-size: 34px;
                 line-height: 150%;
             }
+            @media (max-width: $Mobile) {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 150%;
+            }
         }
 
         &__desc {
@@ -97,15 +104,26 @@
             font-weight: 400;
             font-size: 33px;
             line-height: 40px;
-
             display: flex;
             align-items: flex-end;
             letter-spacing: -0.5px;
+            @media (max-width: $Mobile) {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+                width: 190px;
+            }
         }
     }
 }
 
 .why__slider{
+    @media (max-width: $bigDesc) {
+        display: none;
+    }
+    @media (max-width: $Tablet) {
+        display: block;
+    }
     .why{
         &__item{
             width: 655px;
@@ -115,6 +133,24 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            @media (max-width: $Mobile) {
+                width: 300px;
+                height: 180px;
+                margin: 0;
+                padding: 15px 23px;
+            }
+        }
+        &__img{
+            @media (max-width: $Mobile) {
+                margin-right: 12px;
+            }
+            img{
+                @media (max-width: $Mobile) {
+                    width: 64px;
+                    height: 64px;
+                    margin-right: 12px;
+                }
+            }
         }
     }
 }

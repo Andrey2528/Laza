@@ -49,6 +49,12 @@
                 height: 545.65px;
             }
         }
+        
+        @media (max-width: $Mobile) {
+            right: -107px;
+            top: -35.6px;
+            opacity: 0.4;
+        }
 
     }
 
@@ -69,6 +75,9 @@
             height: 440px;
             right: -142px;
             top: 86px;
+        }
+        @media (max-width: $Mobile) {
+            display: none;
         }
     }
 
@@ -92,6 +101,10 @@
             @media (max-width: $Tablet) {
                 max-width: 634px;
             }
+            @media (max-width: $Mobile) {
+                max-width: 293px;
+                align-items: center;
+            }
             img{
                 width: 302px;
                 @media (max-width: $Tablet) {
@@ -110,6 +123,9 @@
             display: flex;
             flex-direction: column;
             margin: 15px 0 0 15px;
+            @media (max-width: $Mobile) {
+                margin: 5px 0 0 2px;
+            }
         }
 
         &__logo {
@@ -119,12 +135,14 @@
                 @media (max-width: $Tablet) {
                     width: 160px;
                 }
+                @media (max-width: $Mobile) {
+                    width: 70px;
+                }
             }
         }
     }
 
     .main {
-
         &__title {
             font-family: $fontOranienbaum;
             font-style: normal;
@@ -132,10 +150,13 @@
             font-size: 100px;
             line-height: 116px;
             color: #FFFFFF;
-
             @media (max-width: $Tablet) {
                 font-size: 80px;
                 line-height: 92px;
+            }
+            @media (max-width: $Mobile) {
+                font-size: 36px;
+                line-height: 42px;
             }
         }
 
@@ -146,6 +167,10 @@
             font-size: 35px;
             line-height: 43px;
             text-transform: uppercase;
+            @media (max-width: $Mobile) {
+                font-size: 16px;
+                line-height: 20px;
+            }
         }
 
         &__desc{
@@ -153,6 +178,10 @@
             font-weight: 400;
             font-size: 20px;
             line-height: 24px;
+            @media (max-width: $Mobile) {
+                font-size: 9px;
+                line-height: 11px;
+            }
         }
     }
 }

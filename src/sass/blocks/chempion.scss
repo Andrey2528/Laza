@@ -10,6 +10,9 @@
         @media (max-width: $Tablet) {
             margin-top: 90px;
         }
+        @media (max-width: $Mobile) {
+            margin-top: 40px;
+        }
     }
 
     .imgBG1{
@@ -18,7 +21,6 @@
         left: -163px;
         opacity: 0.1;
     }
-
     .imgBG2{
         position: absolute;
         top: 236px;
@@ -32,6 +34,9 @@
         margin-top: 120px;
         @media (max-width: $Tablet) {
             flex-direction: column;
+        }
+        @media (max-width: $Mobile) {
+            margin-top: 29px;
         }
     }
 
@@ -79,6 +84,11 @@
                 font-size: 34px;
                 line-height: 150%;
             }
+            @media (max-width: $Mobile) {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 150%;
+            }
         }
 
         &__subtitle {
@@ -104,6 +114,11 @@
                 font-size: 62px;
                 line-height: 150%;
             }
+            @media (max-width: $Mobile) {
+                font-weight: 600;
+                font-size: 52px;
+                line-height: 150%;
+            }
         }
 
         &__desc {
@@ -124,6 +139,10 @@
                 font-weight: 600;
                 font-size: 32px;
                 line-height: 180%;
+            }
+            @media (max-width: $Mobile) {
+                font-weight: 600;
+                font-size: 26px;
             }
         }
     }

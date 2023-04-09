@@ -30,6 +30,9 @@ body{
     @media (max-width: $Tablet) {
         max-width: 634px;
     }
+    @media (max-width: $Mobile) {
+        max-width: 293px;
+    }
 }
 
 .main {
@@ -41,6 +44,10 @@ body{
         font-size: 100px;
         line-height: 116px;
         color: #FFFFFF;
+        @media (max-width: $Mobile) {
+            font-size: 36px;
+            line-height: 42px;
+        }
     }
 
     &__subtitle {
@@ -49,8 +56,10 @@ body{
         font-weight: 500;
         font-size: 35px;
         line-height: 43px;
- 
-        
+        @media (max-width: $Mobile) {
+            font-size: 16px;
+            line-height: 20px;
+        }
     }
 
     &__desc{
@@ -59,6 +68,11 @@ body{
         font-weight: 500;
         font-size: 24px;
         line-height: 150%;
+        @media (max-width: $Mobile) {
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 11px;
+        }
     }
 
     &__text-red{

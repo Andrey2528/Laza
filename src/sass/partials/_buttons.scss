@@ -30,8 +30,19 @@
             font-weight: 600;
             font-size: 28px;
             line-height: 12px;
-            padding: 0;
+            padding: 19px 25px;
             white-space: nowrap;
+        }
+        @media (max-width: $Mobile) {
+            max-width: 193px;
+            max-height: 36px;
+            font-size: 14px;
+            line-height: 12px;
+            letter-spacing: 0.02em;
+            padding: 12px 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

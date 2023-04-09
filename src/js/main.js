@@ -37,12 +37,12 @@
                         autoplaySpeed: 3000,
                     }
                 },
-                    {
-                    breakpoint: 600,
+                {
+                    breakpoint: 601,
                     settings: {
-                        arrows: false,
+                        aarrows: false,
                         centerMode: true,
-                        centerPadding: '40px',
+                        centerPadding: '5px',
                         slidesToShow: 1
                     }
                 }
@@ -83,11 +83,11 @@
                     }
                 },
                     {
-                    breakpoint: 600,
+                    breakpoint: 601,
                     settings: {
-                        arrows: false,
+                        aarrows: false,
                         centerMode: true,
-                        centerPadding: '40px',
+                        centerPadding: '5px',
                         slidesToShow: 1
                     }
                 }
@@ -128,12 +128,12 @@
                         slidesToShow: 3
                     }
                 },
-                    {
-                    breakpoint: 600,
+                {
+                    breakpoint: 601,
                     settings: {
-                        arrows: false,
+                        aarrows: false,
                         centerMode: true,
-                        centerPadding: '40px',
+                        centerPadding: '1px',
                         slidesToShow: 1
                     }
                 }

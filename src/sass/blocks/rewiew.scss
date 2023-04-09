@@ -7,15 +7,28 @@
         @media (max-width: $Tablet) {
             margin-top: 40px;
         }
+        @media (max-width: $Mobile) {
+            margin-top: 20px;
+        }
     }
 
     &__img{
         width: 470px;
         height: 830px;
         margin: 35px 100px;
+        img{
+            @media (max-width: $Mobile) {
+                width: 300px;
+                height: 532px;
+            }
+        }
+        @media (max-width: $Mobile) {
+            margin: 0px;
+            width: 300px;
+                height: 532px;
+        }
     }
     .main {
-
         &__subtitle {
             font-style: normal;
             font-weight: 600;
@@ -34,7 +47,11 @@
                 font-weight: 700;
                 font-size: 34px;
                 line-height: 150%; 
-                margin-top: 90px;
+            }
+            @media (max-width: $Mobile) {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 150%;
             }
         }
     }
