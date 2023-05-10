@@ -1,26 +1,30 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="shortcut icon" href="src/img/favicon.svg" type="image/x-icon" />
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * Template Name: main page
+ * Template Post Type: page
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Laza
+ */
 
-    <link rel="stylesheet" href="src/slick/slick.css">
-    <link rel="stylesheet" href="src/slick/slick-theme.css">
-    <link rel="stylesheet" href="build/style.css">
+get_header();
+?>
 
-    <title>Laza</title>
-</head>
-<body>
     <header class="header">
         <div class="container">
             <div class="imgBG1">
-                <img src="src/img/bgHead1.png" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgHead1.png" alt="">
             </div>
             <div class="imgBG2">
-                <img src="src/img/bgHead2.png" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgHead2.png" alt="">
             </div>
             <div class="elips"></div>
             <nav class="nav">
@@ -35,7 +39,7 @@
                         </li>
                         <li class="nav__item">
                             <a href="/" class="nav__logo">
-                            <img src="src/img/logo.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/logo.png" alt="">
                             </a>
                         </li>
                         <li class="nav__item">
@@ -71,17 +75,17 @@
                     
                 </div>
                 <div class="banner__rect">
-                    <img src="src/img/bgRectangle.svg" alt="">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgRectangle.svg" alt="">
                 </div>
             </section>
 
             <section class="buy">
                 <div class="container">
                     <div class="imgBG1">
-                        <img src="src/img/bgBuy1.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgBuy1.png" alt="">
                     </div>
                     <div class="imgBG2">
-                        <img src="src/img/bgBuy2.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgBuy2.png" alt="">
                     </div>
                     <div class="buy__text">
                         <h2 class="main__subtitle">
@@ -95,7 +99,7 @@
                         <ul class="card__list-top">
                             <li class="card__item">
                                 <div class="card__img">
-                                    <img src="src/img/card1.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card1.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Ты не хочешь вырасти <br> в доходе х10
@@ -103,7 +107,7 @@
                             </li>
                             <li class="card__item item-top">
                                 <div class="card__img">
-                                    <img src="src/img/card2.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card2.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Ты не хочешь учиться, ведь и так знаешь абсолютно все в индустрии
@@ -111,7 +115,7 @@
                             </li>
                             <li class="card__item">
                                 <div class="card__img">
-                                    <img src="/src/img/card3.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card3.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Ты всю жизнь собираешься работать в найме
@@ -121,7 +125,7 @@
                         <ul class="card__list-bottom">
                             <li class="card__item item__margin-right">
                                 <div class="card__img">
-                                    <img src="src/img/card4.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card4.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Ты спокойно можешь поднять чек прямо сейчас
@@ -129,7 +133,7 @@
                             </li>
                             <li class="card__item">
                                 <div class="card__img">
-                                    <img src="src/img/card5.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card5.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Ты никогда не планируешь делать свой бизнес
@@ -141,7 +145,7 @@
                     <div class="buy-slider1 main__slider">
                         <div class="buy-slider1__item">
                             <div class="card__img">
-                                <img src="src/img/card1.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card1.png" alt="">
                             </div>
                             <p class="card__text main__desc">
                                 Ты не хочешь вырасти <br> в доходе х10
@@ -149,7 +153,7 @@
                         </div>
                         <div class="buy-slider1__item">
                             <div class="card__img">
-                                <img src="src/img/card2.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card2.png" alt="">
                             </div>
                             <p class="card__text main__desc">
                                 Ты не хочешь учиться, ведь и так знаешь абсолютно все в индустрии
@@ -157,7 +161,7 @@
                         </div>
                         <div class="buy-slider1__item">
                             <div class="card__img">
-                                <img src="/src/img/card3.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card3.png" alt="">
                             </div>
                             <p class="buy-slider1__text main__desc">
                                 Ты всю жизнь собираешься работать в найме
@@ -165,7 +169,7 @@
                         </div>
                         <div class="buy-slider1__item">
                             <div class="card__img">
-                                <img src="src/img/card4.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card4.png" alt="">
                             </div>
                             <p class="card__text main__desc">
                                 Ты спокойно можешь поднять чек прямо сейчас
@@ -173,7 +177,7 @@
                         </div>
                         <div class="buy-slider1__item">
                             <div class="card__img">
-                                <img src="src/img/card5.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card5.png" alt="">
                             </div>
                             <p class="card__text main__desc">
                                 Ты никогда не планируешь делать свой бизнес
@@ -186,11 +190,11 @@
             <section class="buttonBlock">
                 <div class="container">
                     <div class="buttonBlock__img-right">
-                        <img src="src/img/Vector 4.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/Vector 4.png" alt="">
                     </div>
                     <a href="$" class="main__btn">ТЕБЕ СЮДА</a>
                     <div class="buttonBlock__img-left">
-                        <img src="src/img/Vector 4.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/Vector 4.png" alt="">
                     </div>
                 </div>
             </section>
@@ -198,10 +202,10 @@
             <section class="buy">
                 <div class="container">
                     <div class="imgBG3">
-                        <img src="src/img/bgBuy3.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgBuy3.png" alt="">
                     </div>
                     <div class="imgBG4">
-                        <img src="src/img/bgBuy4.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgBuy4.png" alt="">
                     </div>
                     <div class="buy__text">
                         <h2 class="main__subtitle">
@@ -212,7 +216,7 @@
                         <ul class="card__list-top">
                             <li class="card__item">
                                 <div class="card__img">
-                                    <img src="src/img/card6.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card6.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Тебя хвалят клиенты, но денег больше не становится
@@ -220,7 +224,7 @@
                             </li>
                             <li class="card__item item-top">
                                 <div class="card__img">
-                                    <img src="src/img/card7.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card7.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Тебя хвалят не все клиенты, есть негативные отзывы
@@ -228,7 +232,7 @@
                             </li>
                             <li class="card__item">
                                 <div class="card__img">
-                                    <img src="src/img/card8.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card8.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Ты прошла кучу курсов, но все равно чего-то не хватает
@@ -238,7 +242,7 @@
                         <ul class="card__list-bottom">
                             <li class="card__item item__margin-right">
                                 <div class="card__img">
-                                    <img src="src/img/card9.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card9.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Ты прошла кучу курсов, но все равно чего-то не хватает
@@ -246,7 +250,7 @@
                             </li>
                             <li class="card__item">
                                 <div class="card__img">
-                                    <img src="src/img/card10.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card10.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Ты хочешь открыть свою студию, но не знаешь, с чего начать
@@ -258,7 +262,7 @@
                     <div class="buy-slider1 main__slider">
                         <div class="buy-slider1__item">
                             <div class="card__img">
-                                    <img src="src/img/card7.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card7.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Тебя хвалят не все клиенты, есть негативные отзывы
@@ -266,7 +270,7 @@
                         </div>
                         <div class="buy-slider1__item">
                             <div class="card__img">
-                                    <img src="src/img/card8.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card8.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Ты прошла кучу курсов, но все равно чего-то не хватает
@@ -274,7 +278,7 @@
                         </div>
                         <div class="buy-slider1__item">
                             <div class="card__img">
-                                    <img src="src/img/card9.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card9.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Ты прошла кучу курсов, но все равно чего-то не хватает
@@ -282,7 +286,7 @@
                         </div>
                         <div class="buy-slider1__item">
                            <div class="card__img">
-                                    <img src="src/img/card10.png" alt="">
+                                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card10.png" alt="">
                                 </div>
                                 <p class="card__text main__desc">
                                     Ты хочешь открыть свою студию, но не знаешь, с чего начать
@@ -405,16 +409,16 @@
             <section class="result">
                 <div class="container">
                     <div class="imgBG1">
-                        <img src="src/img/bgResult1.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgResult1.png" alt="">
                     </div>
                     <div class="imgBG2">
-                        <img src="src/img/bgResult2.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgResult2.png" alt="">
                     </div>
                     <h2 class="main__subtitle"><span class="main__text-red">В РЕЗУЛЬТАТЕ</span></h2>
                     <ul class="result__list">
                         <li class="result__item">
                             <div class="result__img">
-                                <img src="src/img/result1.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/result1.png" alt="">
                             </div>
                             <p class="result__text main__desc">
                                 Ты станешь грамотным специалистом, у которого не будет возникать никаких вопросов и
@@ -423,7 +427,7 @@
                         </li>
                         <li class="result__item-center">
                             <div class="result__img">
-                                <img src="src/img/result2.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/result2.png" alt="">
                             </div>
                             <p class="result__text main__desc">
                                 Вырастешь в качестве, скорости, в доходе.
@@ -431,7 +435,7 @@
                         </li>
                         <li class="result__item">
                             <div class="result__img">
-                                <img src="src/img/result3.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/result3.png" alt="">
                             </div>
                             <p class="result__text main__desc">
                                 У тебя появятся новые профессиональные связи, новые друзья, новое позитивное
@@ -443,7 +447,7 @@
                     <div class="result__slider main__slider">
                         <div class="result__item">
                             <div class="result__img">
-                                <img src="src/img/result1.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/result1.png" alt="">
                             </div>
                             <p class="result__text main__desc">
                                 Ты станешь грамотным специалистом, у которого не будет возникать никаких вопросов и
@@ -452,7 +456,7 @@
                         </div>
                         <div class="result__item">
                             <div class="result__img">
-                                <img src="src/img/result2.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/result2.png" alt="">
                             </div>
                             <p class="result__text main__desc">
                                 Вырастешь в качестве, скорости, в доходе.
@@ -460,7 +464,7 @@
                         </div>
                         <div class="result__item">
                             <div class="result__img">
-                                <img src="src/img/result3.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/result3.png" alt="">
                             </div>
                             <p class="result__text main__desc">
                                 У тебя появятся новые профессиональные связи, новые друзья, новое позитивное
@@ -474,10 +478,10 @@
             <section class="most">
                 <div class="container">
                     <div class="imgBG1">
-                        <img src="src/img/bgMost1.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgMost1.png" alt="">
                     </div>
                     <div class="imgBG2">
-                        <img src="src/img/bgMost2.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgMost2.png" alt="">
                     </div>
                     <h2 class="main__subtitle">
                         <span class="main__text-red">
@@ -487,7 +491,7 @@
                     <ul class="most__list">
                         <li class="most__item">
                             <div class="most__img">
-                                <img src="src/img/card11.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card11.png" alt="">
                             </div>
                             <p class="most__text main__desc">
                                 Ты сможешь делегировать свою работу, 
@@ -496,7 +500,7 @@
                         </li>
                         <li class="most__item">
                             <div class="most__img">
-                                <img src="src/img/card12.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card12.png" alt="">
                             </div>
                             <p class="most__text main__desc">
                                 Выйдешь на новую ступень профессионализма и 
@@ -506,11 +510,11 @@
                         </li>
                         <li class="most__item">
                             <div class="most__img">
-                                <img src="src/img/card13.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/card13.png" alt="">
                             </div>
                             <p class="most__text main__desc">
                                 Это не просто видеокурс, это комплексная система по построению своего бизнеса в нейлиндустрии. Это огромное количество практики под наставничеством крутого преподавателя –
-                               <span class="main__text-red" style="text-decoration: underline 2px solid #DC3F31;">Ксении Лукьяновой</span>, обратная связь на протяжении всего курса, обмен опытом с другими
+                               <a class="main__text-red" style="text-decoration: underline 2px solid #DC3F31;">Ксении Лукьяновой</a>, обратная связь на протяжении всего курса, обмен опытом с другими
                                мастерами.
                             </p>
                         </li>
@@ -521,10 +525,10 @@
             <section class="why">
                 <div class="container">
                     <div class="imgBG1">
-                        <img src="src/img/bgWhy1.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgWhy1.png" alt="">
                     </div>
                     <div class="imgBG2">
-                        <img src="src/img/bgWhy2.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgWhy2.png" alt="">
                     </div>
                     <h2 class="main__subtitle">
                         <span class="main__text-red">
@@ -534,7 +538,7 @@
                     <ul class="why__list">
                         <li class="why__item">
                             <div class="why__img">
-                                <img src="src/img/why1.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/why1.png" alt="">
                             </div>
                             <p class="main__desc">
                                 Школы в Дубаи (ОАЭ), Минске (РБ), Батуми (Грузия)
@@ -542,7 +546,7 @@
                         </li>
                         <li class="why__item">
                             <div class="why__img">
-                                <img src="src/img/why2.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/why2.png" alt="">
                             </div>
                             <p class="main__desc">
                                 Курсы в Тбилиси (Грузия), г.Клайпеда (Литва)
@@ -552,7 +556,7 @@
                     <ul class="why__list-bottom">
                         <li class="why__item">
                             <div class="why__img">
-                                <img src="src/img/why3.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/why3.png" alt="">
                             </div>
                             <p class="main__desc">
                                 30 инструкторов после обучения у нас открыли свои школы и успешно работают
@@ -560,7 +564,7 @@
                         </li>
                         <li class="why__item">
                             <div class="why__img">
-                                <img src="src/img/why4.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/why4.png" alt="">
                             </div>
                             <p class="main__desc">
                                 Более 2000 учеников по всему миру
@@ -571,7 +575,7 @@
                     <div class="why__slider main__slider">
                         <div class="why__item">
                             <div class="why__img">
-                                <img src="src/img/why1.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/why1.png" alt="">
                             </div>
                             <p class="main__desc">
                                 Школы в Дубаи (ОАЭ), Минске (РБ), Батуми (Грузия)
@@ -579,7 +583,7 @@
                         </div>
                         <div class="why__item">
                             <div class="why__img">
-                                <img src="src/img/why2.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/why2.png" alt="">
                             </div>
                             <p class="main__desc">
                                 Курсы в Тбилиси (Грузия), г.Клайпеда (Литва)
@@ -587,7 +591,7 @@
                         </div>
                         <div class="why__item">
                             <div class="why__img">
-                                <img src="src/img/why3.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/why3.png" alt="">
                             </div>
                             <p class="main__desc">
                                 30 инструкторов после обучения у нас открыли свои школы и успешно работают
@@ -595,7 +599,7 @@
                         </div>
                         <div class="why__item">
                             <div class="why__img">
-                                <img src="src/img/why4.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/why4.png" alt="">
                             </div>
                             <p class="main__desc">
                                 Более 2000 учеников по всему миру
@@ -608,10 +612,10 @@
             <section class="chempion">
                 <div class="container">
                     <div class="imgBG1">
-                        <img src="src/img/bgChempion1.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgChempion1.png" alt="">
                     </div>
                     <div class="imgBG2">
-                        <img src="src/img/bgChempion2.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgChempion2.png" alt="">
                     </div>
                     <h2 class="main__title">
                         <span class="main__text-red">
@@ -660,22 +664,22 @@
                     </h2>
                     <div class="slider multiple-items">
                         <div class="rewiew__img">
-                            <img src="src/img/rewiew1.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/rewiew1.png" alt="">
                         </div>
                         <div class="rewiew__img">
-                            <img src="src/img/rewiew2.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/rewiew2.png" alt="">
                         </div>
                         <div class="rewiew__img">
-                            <img src="src/img/rewiew3.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/rewiew3.png" alt="">
                         </div>
                         <div class="rewiew__img">
-                            <img src="src/img/rewiew1.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/rewiew1.png" alt="">
                         </div>
                         <div class="rewiew__img">
-                            <img src="src/img/rewiew2.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/rewiew2.png" alt="">
                         </div>
                         <div class="rewiew__img">
-                            <img src="src/img/rewiew3.png" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/rewiew3.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -733,52 +737,13 @@
             <section class="teacher">
                 <div class="container">
                     <div class="slider2">
-                        <div class="teacher__card">
-                            <div class="card__text">
-                                <h2 class="main__title">
-                                    Обучение УМНОМУ МАНИКЮРУ и Педикюру
-                                </h2>
-                                <p class="main__subtitle">
-                                    <span class="main__text-red">12 уроков + Бонус</span>
-                                    «Педикюр с эл-ми
-                                    Подологии» от <span class="main__text-red" style="border-bottom: 3px solid #DC3F31;">Ксении Лукьяновой</span>
-                                    реальной ценностью 2 500 €
-                                </p>
-                            </div>
-                            <div class="teacher__img1">
-                            </div>
-                            <div class="elips"></div>
-                        </div>
-                        <div class="teacher__card">
-                            <div class="card__text">
-                                <h2 class="main__title">
-                                    Обучение ведению бизнеса
-                                </h2>
-                                <p class="main__subtitle">
-                                    <span class="main__text-red">12 уроков + Бонус</span>
-                                    по финансовой грамотности, целеполаганию, денежному мышлению от <span class="main__text-red" style="border-bottom: 3px solid #DC3F31;">Натальи Коноваловой </span>
-                                    реальной ценностью 1 000 €
-                                </p>
-                            </div>
-                            <div class="teacher__img2">
-                            </div>
-                            <div class="elips"></div>
-                        </div>
-                        <div class="teacher__card">
-                            <div class="card__text">
-                                <h2 class="main__title">
-                                    Обучение созданию личного бренда
-                                </h2>
-                                <p class="main__subtitle">
-                                    <span class="main__text-red">12 уроков </span>
-                                    по созданию личного<br> бренда и продвижению в<br> соцсетях от <span class="main__text-red" style="border-bottom: 3px solid #DC3F31;">Анастасии Гринь <br></span>
-                                    реальной ценностью 500 €
-                                </p>
-                            </div>
-                            <div class="teacher__img3">
-                            </div>
-                            <div class="elips"></div>
-                        </div>
+                        <?php
+                            if(have_rows('teacher-cards')) :
+                                while (have_rows('teacher-cards')) : the_row();
+                                    get_template_part('templates/builder/' . get_row_layout());
+                                endwhile;
+                            endif;
+                        ?>
                     </div>
                 </div>
             </section>
@@ -786,16 +751,16 @@
             <section class="registr">
                 <div class="container">
                     <div class="imgBG1">
-                        <img src="src/img/bgReg1.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgReg1.png" alt="">
                     </div>
                     <div class="imgBG2">
-                        <img src="src/img/bgReg2.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgReg2.png" alt="">
                     </div>
                     <div class="imgBG3">
-                        <img src="src/img/regArrowLeft.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/regArrowLeft.png" alt="">
                     </div>
                     <div class="imgBG4">
-                        <img src="src/img/regArrowRight.png" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/regArrowRight.png" alt="">
                     </div>
                     <div class="registr__text-block">
                         <h2 class="main__title">
@@ -813,7 +778,7 @@
                             Получи интенсив «Скорость» стоимостью 300€<br> в подарок при регистрации.
                         </p>
                     </div>
-                    <a href="#" class="registr__btn1"><img src="src/img/main__btn.png" alt=""></a>
+                    <a href="#" class="registr__btn1"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/main__btn.png" alt=""></a>
                     <div class="registr__text-block">
                         <p class="main__desc">
                             Мы очень хотим тебе понравиться, поэтому 
@@ -837,17 +802,4 @@
     
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__img">
-                <img src="/src/img/miniLogo.svg" alt="">
-            </div>
-            <p class="main__desc">Powered by Zhukov Andrey</p>
-        </div>
-    </footer>
-
-    <script src="src/js/jquery-3.6.0.min.js"></script>
-    <script src="src/js/main.js"></script>
-    <script src="src/slick/slick.min.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>

@@ -22,7 +22,7 @@
                 width: 1440px;
             }
             @media (max-width: $Tablet) {
-                width: $Tablet;
+                width: 103%;
             }
         }
     }
@@ -52,7 +52,7 @@
         }
 
         &__img{
-            background-image: url("/src/img/photoKsenia1.png");
+            background-image: url("../src/img/photoKsenia1.png");
             position: absolute;
             left: -167px;
             bottom: -470px;  
@@ -62,7 +62,7 @@
             width: 957px;
 
             @media (max-width: $Tablet) {
-                background-image: url("/src/img/photoKsenia768.png");
+                background-image: url("../src/img/photoKsenia768.png");
                 height: 475px;
                 width: 380px;
                 left: 30px;

@@ -6,7 +6,9 @@ $font-size-desc: 24px;
 $bigDesc: 2560px;
 $Desc: 1440px;
 $mobile-menu-breakpoint: '990px';
-$Tablet: 768px;
+
+//$Tablet: 768px;
+$Tablet: 1050px;
 $Mobile: 600px;
 
 /*
@@ -22,8 +24,6 @@ $Mobile: 600px;
 @media (max-width: $Mobile) {
 
 }
-
-
 */
 
 /*--fonts*/

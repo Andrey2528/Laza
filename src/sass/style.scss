@@ -11,15 +11,19 @@
 
 /*---main page---*/
 
-@import "blocks/banner.scss";
-@import "blocks/buy.scss";
-@import "blocks/buttonBlock.scss";
-@import "blocks/because.scss";
-@import "blocks/result.scss";
-@import "blocks/most.scss";
-@import "blocks/why.scss";
-@import "blocks/chempion.scss";
-@import "blocks/less.scss";
-@import "blocks/teacher.scss";
-@import "blocks/rewiew.scss";
-@import "blocks/registr.scss";
+@import "pages/main_page/banner.scss";
+@import "pages/main_page/buy.scss";
+@import "pages/main_page/buttonBlock.scss";
+@import "pages/main_page/because.scss";
+@import "pages/main_page/result.scss";
+@import "pages/main_page/most.scss";
+@import "pages/main_page/why.scss";
+@import "pages/main_page/chempion.scss";
+@import "pages/main_page/less.scss";
+@import "pages/main_page/teacher.scss";
+@import "pages/main_page/rewiew.scss";
+@import "pages/main_page/registr.scss";
+
+/*---lesson page---*/
+@import "pages/lesson_page/lesson.scss";
+@import "pages/lesson_page/archive_lesson.scss";

@@ -9,6 +9,9 @@
     .container {
         margin-top: 150px;
         @media (max-width: $Mobile) {
+            margin: 21px auto 0 auto;
+        }
+        @media (max-width: 350px) {
             margin: 21px 0 0 0;
         }
     }
@@ -57,76 +60,24 @@
         }
     }
 
-    &__img1{
-        background-image: url("/src/img/teacher1.png");
-        background-repeat: no-repeat;
+    &__img{
         position: absolute;
         z-index: 10;
-        bottom: -121px;
-        right: -149px;
-        width: 747px;
-        height: 933px;
-        &-last{
-            @media (max-width: $Desc) {
-                right: -70px;
+        bottom: 0px;
+        right: 0px;
+        @media (max-width: $Tablet) {
+            display: none;
+        }
+        &-mini{
+            position: absolute;
+            z-index: 10;
+            bottom: 0px;
+            right: 0px;
+            @media (min-width: $Tablet) {
+                display: none;
             }
         }
-        @media (max-width: $Tablet) {
-            background-image: url("/src/img/teacher1_768.png");
-            height: 380.8205261230469px;
-            width: 304.8589782714844px;
-            bottom: -3px;
-            right: -35px;
-        }
-        @media (max-width: $Mobile) {
-            bottom: -30px;
-            right: -35px;
-        }
     }
-    &__img2{
-        background-image: url("/src/img/teacher2.png");
-        background-repeat: no-repeat;
-        position: absolute;
-        z-index: 10;
-        bottom: -439px;
-        right: -309px;
-        width: 1091px;
-        height: 1364px;
-        &-last{
-            @media (max-width: $Desc) {
-                right: -70px;
-            }
-        }
-        @media (max-width: $Tablet) {
-            background-image: url("/src/img/teacher2_768.png");
-            height: 380.8205261230469px;
-            width: 304.8589782714844px;
-            bottom: -2px;
-            right: -2px;
-        }
-    }
-    &__img3{
-        background-image: url("/src/img/teacher3.png");
-        background-repeat: no-repeat;
-        position: absolute;
-        z-index: 10;
-        bottom: -7px;
-        right: -61px;
-        width: 716.21px;
-        height: 895px;
-
-        @media (max-width: $Desc) {
-            right: -101px;;
-        }
-        @media (max-width: $Tablet) {
-            background-image: url("/src/img/teacher3_768.png");
-            height: 380.8205261230469px;
-            width: 304.8589782714844px;
-            bottom: -3px;
-            right: -31px;
-        }
-    }
-
     .card{
         &__text{
             max-width: 950px;
@@ -141,8 +92,7 @@
                 top: 35px;
             }
         }
-    }
-    
+    }    
     .main {
         &__title {
             font-style: normal;

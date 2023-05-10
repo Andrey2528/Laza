@@ -83,6 +83,9 @@
         justify-content: center;
         flex-direction: column;
         text-align: center;
+        @media (max-width: $Mobile) {
+            padding-top: 50px;
+        }
     }
 
     &__card {
@@ -165,6 +168,9 @@
 
 .buy-slider1 {
     @media (max-width: $bigDesc) {
+        display: none;
+    }
+    @media (max-width: $Desc) {
         display: none;
     }
     @media (max-width: $Tablet) {
