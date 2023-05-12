@@ -17,8 +17,6 @@ $video4 = get_sub_field('video4');
 
 ?>
 
-<h2 class="main__title"><?php echo $title ?></h2>
-
 <?php if(get_sub_field('repeat') == '1') : ?>
     <div class="lesson__block-repeat">
         <p class="main__desc"><?php echo $description1 ?></p>

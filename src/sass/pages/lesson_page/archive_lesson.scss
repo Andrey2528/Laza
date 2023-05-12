@@ -9,9 +9,19 @@
         @media (max-width: $Tablet) {
             margin: 20px 0;
         }
-        &__archive-list{
-
-        }
+        position: relative;
+    }
+    &__bgimg1{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -100;
+    }
+    &__bgimg2{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: -100;
     }
     .archive {
 

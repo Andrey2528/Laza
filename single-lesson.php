@@ -1,9 +1,8 @@
 <?php
 
-/** 
-*   Template Name: single-lesson-builder 
-*   Template Post Type: post 
-*   @package Laza
+/*
+Template Name: Single Lesson
+Post Type: lesson
 */
 
 get_header();
@@ -11,8 +10,15 @@ get_header();
 ?>
 
 <main>
-    <section class="lesson">
+    <section class="single-lesson">
+        <div class="single-lesson__bgimg1">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgBuy1.png" alt="">
+        </div>
+        <div class="single-lesson__bgimg2">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgBuy2.png" alt="">
+        </div>
         <div class="container">
+        
             <?php
                 if (have_rows('builder')) :
                     while (have_rows('builder')) : the_row();
@@ -23,5 +29,5 @@ get_header();
         </div>
     </section> 
 </main>
-  
+
 <?php get_footer(); ?>  
