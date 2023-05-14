@@ -1,4 +1,9 @@
 .single-lesson {
+    iframe{
+        width: 100%;
+        height: 100%;
+        border-radius: 24px;
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -6,7 +11,7 @@
         text-align: left;
         margin: 40px auto;
         @media (max-width: $Tablet) {
-            margin: 20px 0;
+            margin: 20px auto;
         }
     }
 
@@ -15,12 +20,31 @@
         top: 0px;
         left: 0px;
         z-index: -100;
+        @media (max-width: $Tablet) {
+            opacity: 0.1;
+        }
+        img{
+            @media (max-width: $Tablet) {
+                width: 50%;
+                height: 50%;
+            }
+        }
     }
     &__bgimg2{
         position: absolute;
         top: 0px;
         right: 0px;
         z-index: -100;
+        @media (max-width: $Tablet) {
+            opacity: 0.1;
+            right: -315px;
+        }
+        img{
+            @media (max-width: $Tablet) {
+                width: 40%;
+                height: 40%;
+            }
+        }
     }
 
     &__block-repeat {
@@ -41,15 +65,10 @@
         }
     }
 
-    .video {
-        &__container{
-            width: 100%;
-            height: 400px;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-        }
+    &__video {
+        width: 100%;
+        height: 400px;
+        
     }
     .main {
         &__desc {

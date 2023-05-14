@@ -17,14 +17,12 @@ $video4 = get_sub_field('video4');
 
 ?>
 
+<h1 class="main__title"><?php echo $title ?></h1>
+
 <?php if(get_sub_field('repeat') == '1') : ?>
     <div class="lesson__block-repeat">
         <p class="main__desc"><?php echo $description1 ?></p>
-        <div class="lesson__video">
-        <div class="video__container">
-                <img src="<?php echo wp_get_attachment_image_url($video1, 'full'); ?>" alt="">
-            </div>
-        </div>
+        <p class="singe-lesson__video"><?php echo $video1 ?></p>
     </div>
 <?php elseif(get_sub_field('repeat') == '2') : ?>
     <div class="lesson__block-repeat">
@@ -102,3 +100,9 @@ $video4 = get_sub_field('video4');
         </div>
     </div>
 <?php endif; ?>
+
+<?php 
+    echo do_shortcode( 
+        '[contact-form-7 id="114" title="Form on lesson page"]' 
+    ); 
+?>

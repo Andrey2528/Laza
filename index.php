@@ -797,9 +797,6 @@ get_header();
                     <a class="registr__btn2">Получить интенсив</a>
                 </div>
             </section>
-
         </div>
-    
     </main>
-
 <?php get_footer(); ?>

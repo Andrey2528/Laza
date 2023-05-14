@@ -114,6 +114,26 @@
             ]
         });
 
+        // Проверяем, является ли устройство мобильным
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        if (isMobile) {
+            // Если устройство мобильное, применяем обработчик события при нажатии
+            $('.accordion-item').click(function() {
+                $(this).find('.accordion-content').slideToggle('slow');
+            });
+        } else {
+            // Если устройство не мобильное, применяем обработчики событий при наведении и уводе курсора
+            $('.accordion-item').hover(
+                function() {
+                  $(this).find('.accordion-content').slideDown('slow');
+                },
+                function() {
+                  $(this).find('.accordion-content').slideUp('slow');
+                }
+            );
+        }
+
         /* Archive Project Functions */
         handleScrollForLessonsUpdate();
         initAnimation();
