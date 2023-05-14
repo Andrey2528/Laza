@@ -1,12 +1,9 @@
 <?php
-
-/*
-Template Name: Single Lesson
-Post Type: lesson
+/**
+* Template Name: Single Lesson
+* Post Type: lesson
 */
-
 get_header();
-
 ?>
 
 <main>
@@ -18,7 +15,6 @@ get_header();
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgBuy2.png" alt="">
         </div>
         <div class="container">
-        
             <?php
                 if (have_rows('builder')) :
                     while (have_rows('builder')) : the_row();

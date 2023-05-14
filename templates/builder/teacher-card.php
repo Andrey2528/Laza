@@ -1,5 +1,4 @@
 <?php
-
 $tch_title = get_sub_field('title');
 $tch_description = get_sub_field('description');
 $tch_description2 = get_sub_field('description2');
@@ -7,7 +6,6 @@ $tch_description_red = get_sub_field('description-red');
 $tch_description_red2 = get_sub_field('description-red2');
 $tch_img = get_sub_field('img');
 $tch_img768 = get_sub_field('img-mini');
-
 ?>
 
 <div class="teacher__card">
@@ -26,6 +24,5 @@ $tch_img768 = get_sub_field('img-mini');
     <div class="teacher__img-mini">
         <img src="<?php echo wp_get_attachment_image_url($tch_img768, 'full'); ?>" alt="">
     </div>
-
     <div class="elips"></div>
 </div>

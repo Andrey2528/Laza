@@ -14,7 +14,6 @@
  *
  * @package Laza
  */
-
 get_header();
 ?>
 
@@ -31,9 +30,9 @@ get_header();
                 <div class="nav__row">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <h2 class="main__title">26</h2>
+                            <h2 class="main__title">22</h2>
                             <div class="nav__text-column">
-                                <p class="main__subtitle">марта</p>
+                                <p class="main__subtitle">июня</p>
                                 <p class="main__desc">Старт потока</p>  
                             </div>
                         </li>

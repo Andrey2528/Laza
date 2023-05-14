@@ -27,7 +27,6 @@ function my_browser_body_class($classes)
 
 add_filter('body_class', 'my_browser_body_class');
 
-
 function remove_weird_characters($content) {
     $content = preg_replace('/\x03/', '', $content);
     return $content;
@@ -70,4 +69,3 @@ function get_lessons_pagination($category = 'any', $page = 1)
     ob_end_clean();
     return $reponse;
 }
-

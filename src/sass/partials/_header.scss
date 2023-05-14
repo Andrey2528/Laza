@@ -18,7 +18,6 @@
             bottom: -1032px;
             left: -183px;
         }
-
         @media (max-width: $Tablet) {
             top: 179px;
             left: -127px;
@@ -43,7 +42,6 @@
             top: -35.6px;
         }
         img{
-            
             @media (max-width: $Tablet) {
                 width: 579.5px;
                 height: 545.65px;
@@ -55,16 +53,13 @@
             top: -35.6px;
             opacity: 0.4;
         }
-
     }
 
     .elips{
         width: 900px;
         height: 900px;
-
         background: rgba(217, 217, 217, 0.16);
         filter: blur(250px);
-
         position: absolute;
         right: -142px;
         bottom: -953px;
@@ -93,8 +88,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-    
             width: 1590px;
+            
             @media (width: $Desc) {
                 width: 1192px;
             }

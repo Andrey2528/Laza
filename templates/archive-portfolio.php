@@ -7,23 +7,20 @@ $aviable = $header_fields['availability'];
 ?>
 
 <?php if($aviable == 'Available') : ?>
-    <div class="accordion">
-        <div class="accordion-item">
-            <div class="accordion-header">
-                <p class="main__title"><?php echo $title; ?></p>
-            </div>
-            <div class="accordion-content">
-                <a href="<?php echo $uri ?>" class="main__subtitle"><?php echo $sub_title ?></a>
-            </div>
+    <li class="archive__item">
+        <a href="<?php echo $uri ?>" class="accordion">
+            <p class="main__title">
+                <?php echo $title; ?>
+            </p>
+        </a>
+        <div class="accordion__item">
+            <a href="<?php echo $uri ?>" class="main__subtitle"><?php echo $sub_title ?></a>
         </div>
-    </div>
-    <?php elseif($aviable == 'Not_available') : ?>
-        <div class="item-contaner">
-            <div class="accordion-header">
-                <p class="main__title"><?php echo $title; ?></p>    
-            </div>
-            <div class="accordion-content">
-                <a href="<?php echo $uri ?>" class="main__subtitle"><?php echo $sub_title ?></a>
-            </div>
-        </div>
+    </li>
+<?php elseif($aviable == 'Not_available') : ?>
+    <li class="archive__item Not_available">
+        <p class="main__title">
+            <?php echo $title; ?>
+        </p>
+    </li>
 <?php endif; ?>

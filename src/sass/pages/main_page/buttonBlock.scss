@@ -1,5 +1,4 @@
 .buttonBlock {
-
     .container {
         display: flex;
         flex-direction: row;
@@ -13,7 +12,6 @@
             margin: 49px auto 49px auto;
         }
     }
-
     &__img {
         &-right{
             img{
@@ -31,7 +29,6 @@
             }
         }
     }
-    
     .main {
         &__btn {
             width: 507px;
@@ -41,15 +38,11 @@
             align-items: center;
             justify-content: center;
 
-            //padding: 40px 140px;
-
             @media (max-width: $Tablet) {
                 width: 277px;
                 height: 72px;
             }
             @media (max-width: $Mobile) {
-                //max-width: 92px;
-                //max-height: 12px;
                 padding: 9px 8px;
             }
         }

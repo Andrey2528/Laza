@@ -1,16 +1,16 @@
 .archive-lesson {
-
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: left;
+        text-align: center;
         margin: 40px auto;
         @media (max-width: $Tablet) {
             margin: 20px auto;
         }
         position: relative;
     }
+
     &__bgimg1{
         position: absolute;
         top: 0px;
@@ -42,68 +42,56 @@
             }
         }
     }
+    
     .archive {
-
         &__list {
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-width: 700px;
         }
 
         &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             display: inline-block;
             max-width: 700px;
             margin: 40px 0px;
-            a{
-                color: $white;   
-                &:hover{ 
-                    color: $darkRed;
-                }
-            }
         }
     }
-    .item-contaner{
+    .Not_available{
         display: flex;
         flex-direction: column;
         align-items: center;
         pointer-events: none;
         opacity: 0.5;
-        a{
-            color: $white;   
-            &:hover{ 
-                color: $darkRed;
-            }
+    }
+
+    .main{
+        &__subtitle{
+            color: $white;
+            text-align: left;
         }
     }
 }
 
 .accordion {
-    width: 100%;
-  }
-  
-  .accordion-item {
-    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-  }
-  
-  .accordion-header {
+    align-items: center;
     cursor: pointer;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .accordion-content {
-    display: flex;
-    align-items: center;
-    visibility: hidden;
-    padding: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .accordion-item:hover .accordion-content {
-    visibility: visible;
-    opacity: 1;
-  }
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+    &__item {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+}

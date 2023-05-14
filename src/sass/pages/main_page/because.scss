@@ -1,5 +1,4 @@
 .because{
-
     .container {
         margin-top: 106px;
         @media (max-width: $Mobile) {
@@ -12,7 +11,6 @@
             flex-direction: column;
         }
     }
-
     &__elips{
         width: 36px;
         height: 36px;
@@ -27,7 +25,6 @@
             width: 32px;
             height: 32px;
         }
-
         @media (max-width: $Tablet) {
             width: 28px;
             height: 28px;
@@ -36,7 +33,6 @@
         @media (max-width: $Mobile) {
             width: 14px;
             height: 14px;
-            margin-right: 8px;
         }
     }
 
@@ -54,12 +50,13 @@
         }
     }
     &__list {
+        width: 100%;
         display: flex;
         justify-content: space-between;
-       
+        align-items: center;
         flex-direction: row;
-
         margin-bottom: 81px;
+
         :last-child{
             margin: 0;
         }
@@ -68,9 +65,6 @@
                 margin: 0;
             }
         }
-        width: 100%;
-        align-items: center;
-
         @media (max-width: $Mobile) {
             flex-direction: column;
             margin-bottom: 0;
@@ -86,7 +80,6 @@
             width: 145px;
         }
     }
-
     .item{
         &__row{
             display: flex;
@@ -107,7 +100,6 @@
                 margin-top: 0;
                 text-align: left;
                 font-style: normal;
-
                 font-family: $fontMontserrat;
                 font-style: normal;
                 font-weight: 500;
@@ -119,7 +111,6 @@
                     font-size: 34px;
                     line-height: 150%;
                 }
-
                 @media (max-width: $Tablet) {
                     font-weight: 500;
                     font-size: 20px;
@@ -161,7 +152,6 @@
         &__desc{
             margin-top: 30px;
             max-width: 1520px;
-
             font-style: normal;
             font-weight: 500;
             font-size: 48px;

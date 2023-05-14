@@ -1,12 +1,9 @@
 <?php
-
 /*
 Template Name: 404 page
  * Template Post Type: page
 */
-
 get_header();
-
 ?>
 
 <main>

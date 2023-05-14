@@ -39,7 +39,6 @@
                     }
                 }
             ]
-            
         });
         $('.slider2').slick({
             dots: true,
@@ -68,14 +67,13 @@
                 {
                     breakpoint: 601,
                     settings: {
-                        aarrows: false,
+                        arrows: false,
                         centerMode: true,
                         centerPadding: '5px',
                         slidesToShow: 1
                     }
                 }
             ]
-            
         });
         $('.main__slider').slick({
             dots: false,
@@ -114,30 +112,43 @@
             ]
         });
 
-        // Проверяем, является ли устройство мобильным
-        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-        if (isMobile) {
-            // Если устройство мобильное, применяем обработчик события при нажатии
-            $('.accordion-item').click(function() {
-                $(this).find('.accordion-content').slideToggle('slow');
-            });
-        } else {
-            // Если устройство не мобильное, применяем обработчики событий при наведении и уводе курсора
-            $('.accordion-item').hover(
-                function() {
-                  $(this).find('.accordion-content').slideDown('slow');
-                },
-                function() {
-                  $(this).find('.accordion-content').slideUp('slow');
-                }
-            );
-        }
-
-        /* Archive Project Functions */
         handleScrollForLessonsUpdate();
         initAnimation();
+        accordionLessonPage();
     });
+
+    function accordionLessonPage(){
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);// Проверяем, является ли устройство мобильным
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        if (isMobile) {// Если устройство мобильное, применяем обработчик события при нажатии
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                    } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        } else {
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("mouseenter", function() {
+                    this.classList.add("active");
+                    var panel = this.nextElementSibling;
+                    panel.style.maxHeight = panel.scrollHeight + "px"; // Устанавливаем максимальную высоту для раскрытия
+                });
+                acc[i].addEventListener("mouseleave", function() { // Добавляем событие mouseleave
+                    this.classList.remove("active");
+                    var panel = this.nextElementSibling;
+                    panel.style.maxHeight = null; // Сбрасываем максимальную высоту
+                });
+            }
+        }
+    }
 
     function onEntry(entry) {
         entry.forEach(change => {
@@ -171,8 +182,7 @@
 
             if (($(document).height() - $(window).height()) - $(window).scrollTop() <= 800) {
 
-                
-                $('.loading-animation').addClass('active-loading'); //TODO: Enable Loading animation
+                $('.loading-animation').addClass('active-loading'); //Enable Loading animation
 
                 lessonList.attr('data-ajaxing', true);
                 const data = await getLessons(lessonList.attr('data-cat'), currentPage + 1);
@@ -181,7 +191,7 @@
                 lessonList.attr('data-max-page', data['max-page']);
                 lessonList.removeAttr('data-ajaxing');
 
-                $('.loading-animation').removeClass('active-loading');//TODO: Disable Loading animation
+                $('.loading-animation').removeClass('active-loading');//Disable Loading animation
 
                 $('.archive__list').append(data['html']);
                 initAnimation();
@@ -209,5 +219,4 @@
             return '';
         }
     }
-
 })(jQuery);

@@ -8,17 +8,16 @@
  *
  * @package Laza
  */
-
 ?>
 
-    <footer class="footer">
-    <?php wp_footer();?>
-        <div class="container">
-            <div class="footer__img">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/miniLogo.svg" alt="">
+        <footer class="footer">
+        <?php wp_footer();?>
+            <div class="container">
+                <div class="footer__img">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/miniLogo.svg" alt="">
+                </div>
+                <p class="main__desc">Powered by Zhukov Andrey</p>
             </div>
-            <p class="main__desc">Powered by Zhukov Andrey</p>
-        </div>
-    </footer>
+        </footer>
     </body>
 </html>

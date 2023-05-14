@@ -6,12 +6,8 @@
  * Template Name: Archive Lesson
  *
  */
-
 get_header();
-
-$categories = get_lesson_categories();
 $lessons = get_lessons_pagination();
-
 ?>
 
 <main>
@@ -24,11 +20,9 @@ $lessons = get_lessons_pagination();
         </div>
         <div class="container">
             <h1 class="main__title">Курсы</h1>
-            <div id="lesson-list" class="container container__archive-list">
-                <ul class="archive__list">
-                    <?php echo $lessons['html']; ?>  
-                </ul>
-            </div>
+            <ul class="archive__list">
+                <?php echo $lessons['html']; ?>  
+            </ul>
         </div>
     </section>   
 </main>

@@ -6,21 +6,11 @@
  *
  * @package Laza
  */
-
  define('THEME_DIR', get_template_directory_uri());
-
  require_once( __DIR__ . '/core/core.php');
- 
-// SVG support
-function cc_mime_types($mimes) {
-    $mimes['svg'] = 'image/svg+xml';
-    return $mimes;
-}
-add_filter('upload_mimes', 'cc_mime_types');
 
 function my_scripts_method(){
     /*style */
-    
     wp_enqueue_style( 'slick_style', get_stylesheet_directory_uri().'/src/slick/slick.css');
     wp_enqueue_style( 'slick_min_style', get_stylesheet_directory_uri().'/src/slick/slick-theme.css');
     wp_enqueue_style( 'main_style', get_stylesheet_directory_uri().'/build/style.css');
@@ -29,8 +19,6 @@ function my_scripts_method(){
     wp_deregister_script( 'jquery' );
     wp_register_script( 'jquery', get_stylesheet_directory_uri().'/src/js/jquery-3.6.0.min.js', array(), NULL, false);
     wp_enqueue_script( 'jquery' );
-
-    
     wp_localize_script( 'main-js', 'ajax',
 		array(
 			'url' => admin_url('admin-ajax.php')
