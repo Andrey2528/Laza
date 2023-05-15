@@ -111,11 +111,32 @@
                 }
             ]
         });
-
+        
+        checkInputFile();
         handleScrollForLessonsUpdate();
-        initAnimation();
         accordionLessonPage();
     });
+
+    function checkInputFile(){
+        const fileInput = document.getElementById("file-input");
+        const fileLabel = document.getElementById("file-label");
+        const buttonText = fileLabel.querySelector(".input__file-button-text");
+        
+        fileInput.addEventListener("change", function() {
+            if (fileInput.files.length > 0) {
+                const file = fileInput.files[0];
+                const fileType = file.type;
+                
+                if (fileType === "application/vnd.ms-excel" || fileType === "application/pdf") {
+                    buttonText.textContent = "Выбрано";
+                } else {
+                    buttonText.textContent = "Неправильный тип файла";
+                }
+              } else {
+                    buttonText.textContent = "Выберите файл";
+              }
+        });
+    }
 
     function accordionLessonPage(){
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);// Проверяем, является ли устройство мобильным
@@ -150,23 +171,6 @@
         }
     }
 
-    function onEntry(entry) {
-        entry.forEach(change => {
-            if (change.isIntersecting) {
-                change.target.classList.add('element-show');
-            }
-        });
-    }
-
-    function initAnimation() {
-        let options = { threshold: [0.5] };
-        let observer = new IntersectionObserver(onEntry, options);
-        let elements = document.querySelectorAll('.element-animation');
-        for (let elm of elements) {
-            observer.observe(elm);
-        }
-    }
-
     // Logic for scroll
     function handleScrollForLessonsUpdate() {
         const lessonList = $('#lesson-list');
@@ -194,7 +198,6 @@
                 $('.loading-animation').removeClass('active-loading');//Disable Loading animation
 
                 $('.archive__list').append(data['html']);
-                initAnimation();
             }
         });
     }

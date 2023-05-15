@@ -15,47 +15,47 @@ $video4 = get_sub_field('video4');
 
 <?php if(get_sub_field('repeat') == '1') : ?>
     <div class="lesson__block-repeat">
-        <p class="main__desc"><?php echo $description1 ?></p>
         <p class="singe-lesson__video"><?php echo $video1 ?></p>
+        <p class="main__desc"><?php echo $description1 ?></p>
     </div>
 <?php elseif(get_sub_field('repeat') == '2') : ?>
     <div class="lesson__block-repeat">
-        <p class="main__desc"><?php echo $description1 ?></p>
         <p class="singe-lesson__video"><?php echo $video1 ?></p>
+        <p class="main__desc"><?php echo $description1 ?></p>
     </div>
     <div class="lesson__block-repeat">
-        <p class="main__desc"><?php echo $description2 ?></p>
         <p class="singe-lesson__video"><?php echo $video2 ?></p>
+        <p class="main__desc"><?php echo $description2 ?></p>
     </div>
 <?php elseif(get_sub_field('repeat') == '3') : ?>
     <div class="lesson__block-repeat">
-        <p class="main__desc"><?php echo $description1 ?></p>
         <p class="singe-lesson__video"><?php echo $video1 ?></p>
+        <p class="main__desc"><?php echo $description1 ?></p>
     </div>
     <div class="lesson__block-repeat">
-        <p class="main__desc"><?php echo $description2 ?></p>
         <p class="singe-lesson__video"><?php echo $video2 ?></p>
+        <p class="main__desc"><?php echo $description2 ?></p>
     </div>
     <div class="lesson__block-repeat">
-        <p class="main__desc"><?php echo $description3 ?></p>
         <p class="singe-lesson__video"><?php echo $video3 ?></p>
+        <p class="main__desc"><?php echo $description3 ?></p>
     </div>
 <?php elseif(get_sub_field('repeat') == '4') : ?>
     <div class="lesson__block-repeat">
-        <p class="main__desc"><?php echo $description1 ?></p>
         <p class="singe-lesson__video"><?php echo $video1 ?></p>
+        <p class="main__desc"><?php echo $description1 ?></p>
     </div>
     <div class="lesson__block-repeat">
-        <p class="main__desc"><?php echo $description2 ?></p>
         <p class="singe-lesson__video"><?php echo $video2 ?></p>
+        <p class="main__desc"><?php echo $description2 ?></p>
     </div>
     <div class="lesson__block-repeat">
-        <p class="main__desc"><?php echo $description3 ?></p>
         <p class="singe-lesson__video"><?php echo $video3 ?></p>
+        <p class="main__desc"><?php echo $description3 ?></p>
     </div>
     <div class="lesson__block-repeat">
-        <p class="main__desc"><?php echo $description4 ?></p>
         <p class="singe-lesson__video"><?php echo $video4 ?></p>
+        <p class="main__desc"><?php echo $description4 ?></p>
     </div>
 <?php endif; ?>
 

@@ -39,3 +39,27 @@
         }
     }
 }
+.input{
+    &__file-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+        height: 61px;
+        border-radius: 24px;
+        
+        @media (max-width: $Desc) {
+            max-width: 366px;
+            min-width: 366px;
+        }
+        @media (max-width: $Tablet) {
+            max-width: 259px;
+            min-width: 259px;
+        }
+        @media (max-width: $Mobile) {
+            max-width: 100%;
+            min-width: 136px;
+        }
+    }
+}
