@@ -2,6 +2,16 @@
     'use strict';
 
     $(document).ready(function(){
+        sliderMultipleItem();
+        sliderSlider2();
+        sliderMainSlider();
+
+        checkInputFile();
+        handleScrollForLessonsUpdate();
+        accordionLessonPage();
+    });
+
+    function sliderMultipleItem(){
         $('.multiple-items').slick({
             dots: true,
             arrows: true,
@@ -39,7 +49,10 @@
                     }
                 }
             ]
-        });
+        })
+    }
+
+    function sliderSlider2(){
         $('.slider2').slick({
             dots: true,
             infinite: true,
@@ -74,7 +87,10 @@
                     }
                 }
             ]
-        });
+        })
+    }
+
+    function sliderMainSlider(){
         $('.main__slider').slick({
             dots: false,
             arrows: false,
@@ -110,31 +126,31 @@
                     }
                 }
             ]
-        });
-        
-        checkInputFile();
-        handleScrollForLessonsUpdate();
-        accordionLessonPage();
-    });
+        })
+    }
 
     function checkInputFile(){
         const fileInput = document.getElementById("file-input");
         const fileLabel = document.getElementById("file-label");
         const buttonText = fileLabel.querySelector(".input__file-button-text");
-        
+
         fileInput.addEventListener("change", function() {
             if (fileInput.files.length > 0) {
                 const file = fileInput.files[0];
                 const fileType = file.type;
                 
-                if (fileType === "application/vnd.ms-excel" || fileType === "application/pdf") {
+                if (fileType === "application/pdf" || fileType === "image/jpeg" || fileType ===  "image/jpg" 
+                    || fileType ===  "image/png" || fileType ===  "application/vnd.ms-excel" 
+                    || fileType ===  "application//vnd.ms-word" || fileType ===  "" || fileType ===  "text/plain" 
+                    || fileType ===  "xlsx") {
+
                     buttonText.textContent = "Выбрано";
                 } else {
                     buttonText.textContent = "Неправильный тип файла";
                 }
-              } else {
-                    buttonText.textContent = "Выберите файл";
-              }
+            } else {
+                buttonText.textContent = "Выберите файл";
+            }
         });
     }
 
