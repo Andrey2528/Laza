@@ -32,4 +32,5 @@ function register_lesson_type()
 }
 
 add_action('init', 'register_lesson_type');
+
 ?>
