@@ -12,6 +12,27 @@ $lessons = get_lessons_pagination();
 
 <main>
     <section class="archive-lesson">
+        <header class="page-header">
+            <div class="container">
+                <div class="page-header__row">
+                    <a href="/" class="page-header__logo">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/logo.png" alt="">
+                    </a>
+                    <div class="lang">
+                        <div class="dropdown">
+                            <button class="dropdown-toggle main__desc" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Язык
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <ul>
+                                    <?php pll_the_languages();?>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
         <div class="archive-lesson__bgimg1">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgBuy1.png" alt="">
         </div>

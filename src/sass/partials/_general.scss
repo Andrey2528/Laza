@@ -97,3 +97,107 @@ main{
         color: $red;
     }
 }
+
+.page-header {
+    &__row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__logo {
+        width: 200px;
+        height: 200px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .lang{
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            .dropdown-toggle {
+                width: 100px;
+                height: 40px;
+                background: rgba(55, 55, 55, 0.6);
+                border: 5px solid rgba(220, 63, 49, 0.3);
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+                border-radius: 56px;
+                cursor: pointer;
+                color: $white;
+            }
+            
+            .dropdown-toggle:hover {
+                background: rgba(55, 55, 55, 0.6);
+            }
+            
+            .dropdown-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                min-width: 160px;
+                background: rgba(55, 55, 55, 0.6);
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+                border-radius: 56px;
+                padding: 8px 0;
+                display: none;
+                color: $white;
+            }
+            
+            &:hover .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-menu{
+                width: 200px;
+                padding: 20px;
+                ul{
+                    max-width: 508px;
+                    width: 100%;
+                    li{
+                        background: rgba(55, 55, 55, 0.6);
+                        border: 5px solid rgba(220, 63, 49, 0.3);
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+                        border-radius: 56px;
+                        margin-bottom: 30px;
+    
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &:last-child{
+                            margin: 0px 0px 0px 0px;
+                        }
+                        a{
+                            color: $white;
+                            font-family: $fontMontserrat;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 24px;
+                            line-height: 150%;
+                            @media (max-width: $Mobile) {
+                                font-weight: 400;
+                                font-size: 9px;
+                                line-height: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .dropdown-item {
+                display: block;
+                padding: 8px 16px;
+                text-decoration: none;
+                background: rgba(55, 55, 55, 0.6);
+            }
+            .dropdown-item:hover {
+                background: rgba(220, 63, 49, 0.3);
+            }  
+        } 
+    }
+}

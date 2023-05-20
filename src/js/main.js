@@ -2,16 +2,10 @@
     'use strict';
 
     $(document).ready(function(){
-        sliderMultipleItem();
-        sliderSlider2();
-        sliderMainSlider();
-
         checkInputFile();
         handleScrollForLessonsUpdate();
         accordionLessonPage();
-    });
 
-    function sliderMultipleItem(){
         $('.multiple-items').slick({
             dots: true,
             arrows: true,
@@ -49,10 +43,7 @@
                     }
                 }
             ]
-        })
-    }
-
-    function sliderSlider2(){
+        });
         $('.slider2').slick({
             dots: true,
             infinite: true,
@@ -87,10 +78,7 @@
                     }
                 }
             ]
-        })
-    }
-
-    function sliderMainSlider(){
+        });
         $('.main__slider').slick({
             dots: false,
             arrows: false,
@@ -126,8 +114,8 @@
                     }
                 }
             ]
-        })
-    }
+        });
+    });
 
     function checkInputFile(){
         const fileInput = document.getElementById("file-input");

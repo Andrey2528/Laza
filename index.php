@@ -28,11 +28,6 @@ get_header();
             <div class="elips"></div>
             <nav class="nav">
                 <div class="nav__row">
-                <ul class="d-flex lang"> 
-  <?php if(function_exists('pll_the_languages')){ 
-     pll_the_languages(array('display_names_as' => 'slug')); 
-  } ?> 
-</ul>
                     <ul class="nav__list">
                         <li class="nav__item">
                             <h2 class="main__title">22</h2>
@@ -51,7 +46,7 @@ get_header();
                         </li>
                         <li class="nav__item">
                             <a href="/" class="nav__logo">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/logo.png" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/logo.png" alt="">
                             </a>
                         </li>
                         <li class="nav__item">
@@ -70,6 +65,18 @@ get_header();
                             </div>
                         </li>
                     </ul>
+                </div>
+                <div class="lang">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle main__desc" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Язык
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <ul>
+                                <?php pll_the_languages();?>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>

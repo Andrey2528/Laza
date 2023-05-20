@@ -14,6 +14,27 @@ get_header();
     <main>
         <div class="wrapper">
             <section class="teacher-page">
+                <header class="page-header">
+                    <div class="container">
+                        <div class="page-header__row">
+                            <a href="/" class="page-header__logo">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/logo.png" alt="">
+                            </a>
+                            <div class="lang">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle main__desc" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Язык
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <ul>
+                                            <?php pll_the_languages();?>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
                 <div class="container">
                     <h1 class="main__title">Преподаватели</h1>
                     <ul class="teacher-page__list">
