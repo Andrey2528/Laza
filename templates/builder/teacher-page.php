@@ -64,8 +64,9 @@ $teacher_description_list_item15 = get_sub_field('teacher_description_list_item_
                         break;
                 }
             ?>
-            <img src="<?php echo wp_get_attachment_image_url($tch_img, 'full'); ?>" alt="img" class="<?php echo $imgClass; ?>">
-
+            <div class="img">
+                <img src="<?php echo wp_get_attachment_image_url($tch_img, 'full'); ?>" alt="img" class="<?php echo $imgClass; ?>">
+            </div>
                 <div class="elips"></div>
             </div>
             <?php if ($insta_link_bool == 'yes') { ?>

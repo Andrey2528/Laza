@@ -2,19 +2,24 @@
     'use strict';
 
     $(document).ready(function(){
+        initSlider();
         checkInputFile();
         handleScrollForLessonsUpdate();
         accordionLessonPage();
 
+
+       
+    });
+    function initSlider() {
         $('.multiple-items').slick({
-            dots: true,
-            arrows: true,
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            responsive: [
+          dots: true,
+          arrows: true,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          responsive: [
                 {
                     breakpoint: 1441,
                     settings: {
@@ -33,10 +38,10 @@
                         slidesToShow: 1
                     }
                 },
-                {
+                    {
                     breakpoint: 601,
                     settings: {
-                        aarrows: false,
+                        arrows: false,
                         centerMode: true,
                         centerPadding: '5px',
                         slidesToShow: 1
@@ -115,7 +120,7 @@
                 }
             ]
         });
-    });
+      }
 
     function checkInputFile() {
         const fileInput = document.getElementById("file-input");
