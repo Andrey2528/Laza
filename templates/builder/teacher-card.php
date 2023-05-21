@@ -6,16 +6,42 @@ $tch_description_red = get_sub_field('description-red');
 $tch_description_red2 = get_sub_field('description-red2');
 $tch_img = get_sub_field('img');
 $tch_img768 = get_sub_field('img-mini');
+
+pll_register_string(
+    'tch_title', 
+    $tch_title, 
+    'tch'
+);
+pll_register_string(
+    'tch_desc_1', 
+    $tch_description, 
+    'tch'
+);
+pll_register_string(
+    'tch_desc_2', 
+    $tch_description2, 
+    'tch'
+);
+pll_register_string(
+    'tch_desc_red_1', 
+    $tch_description_red, 
+    'tch'
+);
+pll_register_string(
+    'tch_desc_red_2', 
+    $tch_description_red2, 
+    'tch'
+);
 ?>
 
 <div class="teacher__card">
     <div class="card__text">
-        <h2 class="main__title"><?php echo $tch_title ?></h2>
+        <h2 class="main__title"><?php echo esc_html(pll__($tch_title)); ?></h2>
         <p class="main__subtitle">
-            <span class="main__text-red"><?php echo $tch_description_red ?></span>
-            <?php echo $tch_description ?>
-            <span class="main__text-red" style="border-bottom: 3px solid #DC3F31;"><?php echo $tch_description_red2 ?></span>
-            <?php echo $tch_description2 ?>
+            <span class="main__text-red"><?php echo esc_html(pll__($tch_description_red)); ?></span>
+            <?php echo esc_html(pll__($tch_description)); ?>
+            <span class="main__text-red" style="border-bottom: 3px solid #DC3F31;"><?php echo esc_html(pll__($tch_description_red2)); ?></span>
+            <?php echo esc_html(pll__($tch_description2)); ?>
         </p>
     </div>
     <div class="teacher__img">

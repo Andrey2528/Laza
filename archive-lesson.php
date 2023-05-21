@@ -40,7 +40,7 @@ $lessons = get_lessons_pagination();
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/img/bgBuy2.png" alt="">
         </div>
         <div class="container">
-            <h1 class="main__title">Курсы</h1>
+            <h1 class="main__title"><?php echo esc_html(pll__('Курсы'));?></h1>
             <ul class="archive__list">
                 <?php echo $lessons['html']; ?>  
             </ul>

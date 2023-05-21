@@ -36,7 +36,9 @@ get_header();
                     </div>
                 </header>
                 <div class="container">
-                    <h1 class="main__title">Преподаватели</h1>
+                    <h1 class="main__title">
+                        <?php echo esc_html(pll__('Преподаватели'));?>
+                    </h1>
                     <ul class="teacher-page__list">
                         <?php
                             if (have_rows('teacher-page-builder')) :

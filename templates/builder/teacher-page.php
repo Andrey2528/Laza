@@ -42,6 +42,189 @@ $teacher_description_list_item14 = get_sub_field('teacher_description_list_item_
 $teacher_description_list_item15 = get_sub_field('teacher_description_list_item_15');
 $teacher_description_list_item15 = get_sub_field('teacher_description_list_item_15');
 
+pll_register_string(
+    'teacher_name', 
+    $teacher_name, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description1', 
+    $teacher_description1, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description2', 
+    $teacher_description2, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description3', 
+    $teacher_description3, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description4', 
+    $teacher_description4, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description5', 
+    $teacher_description5, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description6', 
+    $teacher_description6, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description7', 
+    $teacher_description7, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description8', 
+    $teacher_description8, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description9', 
+    $teacher_description9, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description10', 
+    $teacher_description10, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description11', 
+    $teacher_description11, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description12', 
+    $teacher_description12, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description13', 
+    $teacher_description13, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description14', 
+    $teacher_description14, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description15', 
+    $teacher_description15, 
+    'teacher'
+);
+
+pll_register_string(
+    'teacher_description_list_item1', 
+    $teacher_description_list_item1, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item2', 
+    $teacher_description_list_item2, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item3', 
+    $teacher_description_list_item3, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item4', 
+    $teacher_description_list_item4, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item5', 
+    $teacher_description_list_item5, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item6', 
+    $teacher_description_list_item6, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item7', 
+    $teacher_description_list_item7, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item8', 
+    $teacher_description_list_item8, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item9', 
+    $teacher_description_list_item9, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item10', 
+    $teacher_description_list_item10, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item11', 
+    $teacher_description_list_item11, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item12', 
+    $teacher_description_list_item12, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item13', 
+    $teacher_description_list_item13, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item14', 
+    $teacher_description_list_item14, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item15', 
+    $teacher_description_list_item15, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item16', 
+    $teacher_description_list_item16, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item17', 
+    $teacher_description_list_item17, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item18', 
+    $teacher_description_list_item18, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item19', 
+    $teacher_description_list_item19, 
+    'teacher'
+);
+pll_register_string(
+    'teacher_description_list_item20', 
+    $teacher_description_list_item20, 
+    'teacher'
+);
+
+
 ?>
 
 <li class="teacher-page__item">
@@ -79,166 +262,166 @@ $teacher_description_list_item15 = get_sub_field('teacher_description_list_item_
         <div class="item__column-half">
         <?php if ($chose_number_of_style_teacher_desc == '1') { ?>
                 <div class="item__text-description">
-                    <h2 class="main__subtitle"><?php echo $teacher_name; ?></h2>
-                    <p class="main__desc"><span><?php echo $teacher_description1; ?></span></p>
-                    <p class="main__desc"><?php echo $teacher_description2; ?></p>
-                    <p class="main__desc"><?php echo $teacher_description3; ?></p>
-                    <p class="main__desc"><?php echo $teacher_description4; ?></p>
+                    <h2 class="main__subtitle"><?php echo esc_html(pll__($teacher_name)); ?></h2>
+                    <p class="main__desc"><span><?php echo esc_html(pll__($teacher_description1)); ?></span></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description2));?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description3));?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description4));?></p>
                     <ul class="main__desc-list">
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item1; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item1));?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item2; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item2)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item3; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item3)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item4; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item4)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item5; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item5)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item6; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item6)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item7; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item7)); ?>
                         </li>
                     </ul>
-                    <p class="main__desc"><?php echo $teacher_description5; ?></p>
-                    <p class="main__desc"><?php echo $teacher_description6; ?><br><?php echo $teacher_description7; ?></p>
-                    <p class="main__desc"><?php echo $teacher_description8; ?></p>
-                    <p class="main__desc"><?php echo $teacher_description9; ?></p>
-                    <p class="main__desc"><?php echo $teacher_description10; ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description5)); ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description6)); ?><br><?php echo esc_html(pll__($teacher_description7)); ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description8)); ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description9)); ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description10)); ?></p>
                 </div>
             <?php } elseif ($chose_number_of_style_teacher_desc == '2') { ?>
                 <div class="item__text-description">
-                    <h2 class="main__subtitle"><?php echo $teacher_name; ?></h2>
-                    <p class="main__desc"><span><?php echo $teacher_description1; ?></span></p>
-                    <p class="main__desc"><?php echo $teacher_description2; ?></p>
+                    <h2 class="main__subtitle"><?php echo esc_html(pll__($teacher_name)); ?></h2>
+                    <p class="main__desc"><span><?php echo esc_html(pll__($teacher_description1));; ?></span></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description2)); ?></p>
                     <ul class="main__desc-list">
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item1; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item1)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item2; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item2)); ?>
                         </li>
                     </ul>
-                    <p class="main__desc"><?php echo $teacher_description3; ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description3)); ?></p>
                     <ul class="main__desc-list">
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item3; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item3)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item4; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item4)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item5; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item5)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item6; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item6)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item7; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item7)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item8; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item8)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item9; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item9)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item10; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item10)); ?>
                         </li>
                     </ul>
-                    <p class="main__desc"><?php echo $teacher_description4; ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description4)); ?></p>
                     <ul class="main__desc-list">
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item11; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item11)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item12; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item12)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item13; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item13)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item14; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item14)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item15; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item15)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item16; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item16)); ?>
                         </li>
                     </ul>
-                    <p class="main__desc"><?php echo $teacher_description5; ?></p>
-                    <p class="main__desc"><?php echo $teacher_description6; ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description5)); ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description6)); ?></p>
                 </div>
             <?php } elseif ($chose_number_of_style_teacher_desc == '3') { ?>
                 <div class="item__text-description">
-                    <h2 class="main__subtitle"><?php echo $teacher_name; ?></h2>
-                    <p class="main__desc"><span><?php echo $teacher_description1; ?></span></p>
-                    <p class="main__desc"><?php echo $teacher_description2; ?></p>
-                    <p class="main__desc"><?php echo $teacher_description3; ?></p>
+                    <h2 class="main__subtitle"><?php echo esc_html(pll__($teacher_name)); ?></h2>
+                    <p class="main__desc"><span><?php echo esc_html(pll__($teacher_description1)); ?></span></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description2)); ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description3)); ?></p>
                     <ul class="main__desc-list">
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item1; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item1)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item2; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item2)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item3; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item3)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item4; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item4)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item5; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item5)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item6; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item6)); ?>
                         </li>
                         <li class="main__desc-item">
                             <div class="elips-text"></div>
-                            <?php echo $teacher_description_list_item7; ?>
+                            <?php echo esc_html(pll__($teacher_description_list_item7)); ?>
                         </li>
                     </ul>
-                    <p class="main__desc"><?php echo $teacher_description4; ?></p>
-                    <p class="main__desc"><?php echo $teacher_description5; ?></p>
-                    <p class="main__desc"><?php echo $teacher_description6; ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description4)); ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description5)); ?></p>
+                    <p class="main__desc"><?php echo esc_html(pll__($teacher_description6)); ?></p>
                 </div>
             <?php } ?>
         </div>

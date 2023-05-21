@@ -53,14 +53,10 @@ get_header();
                             <h2 class="main__title">3</h2>
                             <div class="nav__text-column">
                                 <p class="main__subtitle">
-                                    <?php 
-                                        echo esc_html(pll__('month'));
-                                    ?>
+                                    <?php echo esc_html(pll__('month'));?>
                                 </p>
                                 <p class="main__desc">
-                                    <?php 
-                                        echo esc_html(pll__('Duration'));
-                                    ?>
+                                    <?php  echo esc_html(pll__('Duration')); ?>
                                 </p>  
                             </div>
                         </li>

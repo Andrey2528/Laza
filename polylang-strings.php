@@ -632,6 +632,20 @@
         false
     );
 
+    //other
+    pll_register_string(
+        'laza_other_1',
+        'Преподаватели',
+        'other',
+        false
+    );
+    pll_register_string(
+        'laza_other_2',
+        'Курсы',
+        'other',
+        false
+    );
+
     //button
     pll_register_string(
         'laza_button',
