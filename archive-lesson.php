@@ -21,7 +21,7 @@ $lessons = get_lessons_pagination();
                     <div class="lang">
                         <div class="dropdown">
                             <button class="dropdown-toggle main__desc" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Язык
+                                <?php echo esc_html(pll__('Язык')); ?>
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <ul>

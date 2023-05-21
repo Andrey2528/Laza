@@ -117,30 +117,36 @@
         });
     });
 
-    function checkInputFile(){
+    function checkInputFile() {
         const fileInput = document.getElementById("file-input");
         const fileLabel = document.getElementById("file-label");
         const buttonText = fileLabel.querySelector(".input__file-button-text");
-
-        fileInput.addEventListener("change", function() {
+      
+        fileInput.addEventListener("change", function () {
             if (fileInput.files.length > 0) {
                 const file = fileInput.files[0];
                 const fileType = file.type;
-                
-                if (fileType === "application/pdf" || fileType === "image/jpeg" || fileType ===  "image/jpg" 
-                    || fileType ===  "image/png" || fileType ===  "application/vnd.ms-excel" 
-                    || fileType ===  "application//vnd.ms-word" || fileType ===  "" || fileType ===  "text/plain" 
-                    || fileType ===  "xlsx") {
-
-                    buttonText.textContent = "Выбрано";
+        
+                if (
+                    fileType === "application/pdf" ||
+                    fileType === "image/jpeg" ||
+                    fileType === "image/jpg" ||
+                    fileType === "image/png" ||
+                    fileType === "application/vnd.ms-excel" ||
+                    fileType === "application/msword" ||
+                    fileType === "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" ||
+                    fileType === "text/plain"
+                ) {
+                    buttonText.textContent = lazaTheme.Sucsefull;
                 } else {
-                    buttonText.textContent = "Неправильный тип файла";
+                    buttonText.textContent = lazaTheme.invalidFileType;
                 }
-            } else {
-                buttonText.textContent = "Выберите файл";
-            }
-        });
-    }
+                } else {
+                    buttonText.textContent = lazaTheme.SelectFile;
+                }
+            });
+        }
+      
 
     function accordionLessonPage(){
         var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);// Проверяем, является ли устройство мобильным
